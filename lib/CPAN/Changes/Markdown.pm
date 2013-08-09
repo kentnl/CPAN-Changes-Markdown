@@ -22,7 +22,7 @@ has changes => (
   builder => sub {
     require CPAN::Changes;
     return CPAN::Changes->new();
-  }
+  },
 );
 
 
@@ -38,7 +38,7 @@ sub _serialize_release {
   my $release = delete $args{release};
   my @output;
 
-  push @output, sprintf q[## %s], ( join ' ', grep { defined && length } ( $release->version, $release->date, $release->note ) );
+  push @output, sprintf q[## %s], ( join q[ ], grep { defined && length } ( $release->version, $release->date, $release->note ) );
 
   for my $group ( $release->groups( sort => $args{group_sort} ) ) {
     if ( length $group ) {
@@ -105,7 +105,7 @@ Mostly, this is wrapper around CPAN::Changes that just formats the output differ
 
 Primary use case for me is writing C<Github> release notes.
 
-I plan to eventually have hook filters and stuff to highlight various tokens in a github friendly way.
+I plan to eventually have hook filters and stuff to highlight various tokens in a C<Github> friendly way.
 
 =head1 METHODS
 

@@ -19,7 +19,7 @@ DESCRIPTION
     Primary use case for me is writing "Github" release notes.
 
     I plan to eventually have hook filters and stuff to highlight various
-    tokens in a github friendly way.
+    tokens in a "Github" friendly way.
 
 METHODS
   "load"
