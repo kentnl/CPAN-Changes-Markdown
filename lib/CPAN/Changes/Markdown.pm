@@ -29,12 +29,11 @@ has changes => (
 sub load {
   my ( $self, $path ) = @_;
   require CPAN::Changes;
-  $self->new( changes => CPAN::Changes->load($path) );
+  return $self->new( changes => CPAN::Changes->load($path) );
 }
 
 sub _serialize_release {
-  my $self = shift;
-  my %args = @_;
+  my ( $self, %args )  = @_;
 
   my $release = delete $args{release};
   my @output;
@@ -55,8 +54,7 @@ sub _serialize_release {
 
 
 sub serialize {
-  my $self = shift;
-  my %args = @_;
+  my ( $self, %args ) = @_;
   my %release_args;
   $release_args{group_sort} = $args{group_sort} if $args{group_sort};
 
@@ -105,9 +103,9 @@ version 0.1.0
 
 Mostly, this is wrapper around CPAN::Changes that just formats the output differently.
 
-Primary usecase for me is writing github release notes.
+Primary use case for me is writing C<Github> release notes.
 
-I plan to eventually have hookable filters and stuff to highlight various tokens in a github friendly way.
+I plan to eventually have hook filters and stuff to highlight various tokens in a github friendly way.
 
 =head1 METHODS
 
