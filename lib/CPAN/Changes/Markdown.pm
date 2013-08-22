@@ -55,7 +55,7 @@ sub load {
 sub load_string {
     my ($self, $string ) = @_;
     require CPAN::Changes;
-    return $self->new( changes => CPAN::Changes->load_string($string);
+    return $self->new( changes => CPAN::Changes->load_string($string));
 }
 sub load_utf8 {
     my ( $self, $path ) = @_;
