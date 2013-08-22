@@ -24,7 +24,6 @@ my %module_build_args = (
   "recursive_test_files" => 1,
   "requires" => {
     "CPAN::Changes" => 0,
-    "Data::Dump" => 0,
     "Moo" => "1.000008",
     "Path::Tiny" => 0,
     "Role::Tiny" => 0,
