@@ -26,15 +26,8 @@ has changes => (
     return CPAN::Changes->new();
   },
 );
-sub _coerce_undef_to_filter {
-    return $_[1] if defined $_[1];
-    require CPAN::Changes::Markdown::Filter::Passthrough;
-    return CPAN::Changes::Markdown::Filter::Passthrough->new();
-}
-
 has header_filter => ( 
     is => ro =>,
-    coerce => \&_coerce_undef_to_filter,
     lazy => 1, 
     builder => sub {
         require CPAN::Changes::Markdown::Filter;
@@ -45,7 +38,6 @@ has header_filter => (
 );
 has line_filter => ( 
     is => ro =>,
-    coerce => \&_coerce_undef_to_filter,
     lazy => 1, 
     builder => sub {
         require CPAN::Changes::Markdown::Filter;
