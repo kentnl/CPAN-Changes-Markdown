@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "CPAN-Changes-Markdown",
-  "dist_version" => "0.1.0",
+  "dist_version" => "0.1.1",
   "license" => "perl",
   "module_name" => "CPAN::Changes::Markdown",
   "recommends" => {},
@@ -25,6 +25,9 @@ my %module_build_args = (
   "requires" => {
     "CPAN::Changes" => 0,
     "Moo" => "1.000008",
+    "Role::Tiny" => 0,
+    "Role::Tiny::With" => 0,
+    "Sub::Exporter::Progressive" => 0,
     "perl" => "v5.10.0",
     "strict" => 0,
     "warnings" => 0

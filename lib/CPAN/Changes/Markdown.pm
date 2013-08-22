@@ -6,12 +6,14 @@ BEGIN {
   $CPAN::Changes::Markdown::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::VERSION = '0.1.0';
+  $CPAN::Changes::Markdown::VERSION = '0.1.1';
 }
 
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
 use Moo 1.000008;
+use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
 
 
 
@@ -24,7 +26,34 @@ has changes => (
     return CPAN::Changes->new();
   },
 );
+sub _coerce_undef_to_filter {
+    return $_[1] if defined $_[1];
+    require CPAN::Changes::Markdown::Filter::Passthrough;
+    return CPAN::Changes::Markdown::Filter::Passthrough->new();
+}
 
+has header_filter => ( 
+    is => ro =>,
+    coerce => \&_coerce_undef_to_filter,
+    lazy => 1, 
+    builder => sub {
+        require CPAN::Changes::Markdown::Filter;
+        return CPAN::Changes::Markdown::Filter->new(
+            rules => [ rule_VersionsToCode, rule_UnderscoredToCode ]
+        );
+    }
+);
+has line_filter => ( 
+    is => ro =>,
+    coerce => \&_coerce_undef_to_filter
+    lazy => 1, 
+    builder => sub {
+        require CPAN::Changes::Markdown::Filter;
+        return CPAN::Changes::Markdown::Filter->new(
+            rules => [ rule_VersionsToCode, rule_UnderscoredToCode, rule_PackageNamesToCode ]
+        );
+    }
+);
 
 sub load {
   my ( $self, $path ) = @_;
@@ -42,10 +71,10 @@ sub _serialize_release {
 
   for my $group ( $release->groups( sort => $args{group_sort} ) ) {
     if ( length $group ) {
-      push @output, sprintf q[### %s], $group;
+      push @output, sprintf q[### %s], $self->header_filter->process($group);
     }
     for my $line ( @{ $release->changes($group) } ) {
-      push @output, ' - ' . $line;
+      push @output, ' - ' . $self->line_filter->process($line);
     }
     push @output, q[];
   }
@@ -89,7 +118,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 SYNOPSIS
 
@@ -120,6 +149,17 @@ I plan to eventually have hook filters and stuff to highlight various tokens in 
 =head1 ATTRIBUTES
 
 =head2 C<changes>
+
+=begin MetaPOD::JSON v1.1.0
+
+{
+    "namespace":"CPAN::Changes::Markdown",
+    "interface":"class",
+    "inherits":"Moo::Object"
+}
+
+
+=end MetaPOD::JSON
 
 =head1 AUTHOR
 
