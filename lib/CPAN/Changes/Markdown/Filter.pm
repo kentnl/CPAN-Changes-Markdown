@@ -25,6 +25,8 @@ sub process {
     for my $rule ( @{ $self->rules } ) {
         @input = $rule->filter( @input );
     }
+    use Data::Dump qw(pp);
+    pp(\@input);
     return join q{}, map { $_->to_s } @input;
 }
 

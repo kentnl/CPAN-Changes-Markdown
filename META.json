@@ -45,7 +45,9 @@
       "runtime" : {
          "requires" : {
             "CPAN::Changes" : "0",
+            "Data::Dump" : "0",
             "Moo" : "1.000008",
+            "Path::Tiny" : "0",
             "Role::Tiny" : "0",
             "Sub::Exporter::Progressive" : "0",
             "perl" : "v5.10.0",
@@ -140,10 +142,12 @@
       "modules" : {
          "CPAN::Changes" : "0.23",
          "Capture::Tiny" : "0.22",
+         "Data::Dump" : "1.22",
          "Dist::Zilla::PluginBundle::Author::KENTNL" : "1.8.0",
          "Dist::Zilla::PluginBundle::Author::KENTNL::Lite" : "NA(possibly not installed)",
          "Module::Build" : "0.4007",
          "Moo" : "1.003",
+         "Path::Tiny" : "0.030",
          "Pod::Coverage::TrustPod" : "0.100002",
          "Role::Tiny" : "1.003001",
          "Sub::Exporter::Progressive" : "0.001010",

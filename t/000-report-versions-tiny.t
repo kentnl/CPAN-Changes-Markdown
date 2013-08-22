@@ -50,10 +50,12 @@ sub pmver {
 
 eval { $v .= pmver('CPAN::Changes','any version') };
 eval { $v .= pmver('Capture::Tiny','any version') };
+eval { $v .= pmver('Data::Dump','any version') };
 eval { $v .= pmver('Dist::Zilla::PluginBundle::Author::KENTNL','v1.8.0') };
 eval { $v .= pmver('Dist::Zilla::PluginBundle::Author::KENTNL::Lite','v1.3.0') };
 eval { $v .= pmver('Module::Build','0.4007') };
 eval { $v .= pmver('Moo','1.000008') };
+eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Pod::Coverage::TrustPod','any version') };
 eval { $v .= pmver('Role::Tiny','any version') };
 eval { $v .= pmver('Sub::Exporter::Progressive','any version') };
