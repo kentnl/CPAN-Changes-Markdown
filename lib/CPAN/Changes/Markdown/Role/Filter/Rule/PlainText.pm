@@ -12,7 +12,6 @@ BEGIN {
 # ABSTRACT: A rule that only filters plaintext nodes.
 
 use Role::Tiny;
-use Role::Tiny::With;
 
 requires 'filter_plaintext';
 with 'CPAN::Changes::Markdown::Role::Filter::Rule';

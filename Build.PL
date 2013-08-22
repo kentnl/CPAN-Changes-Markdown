@@ -26,7 +26,6 @@ my %module_build_args = (
     "CPAN::Changes" => 0,
     "Moo" => "1.000008",
     "Role::Tiny" => 0,
-    "Role::Tiny::With" => 0,
     "Sub::Exporter::Progressive" => 0,
     "perl" => "v5.10.0",
     "strict" => 0,

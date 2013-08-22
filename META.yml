@@ -66,7 +66,6 @@ requires:
   CPAN::Changes: 0
   Moo: 1.000008
   Role::Tiny: 0
-  Role::Tiny::With: 0
   Sub::Exporter::Progressive: 0
   perl: v5.10.0
   strict: 0
@@ -86,7 +85,6 @@ x_BuiltWith:
     Moo: 1.003
     Pod::Coverage::TrustPod: 0.100002
     Role::Tiny: 1.003001
-    Role::Tiny::With: NA(undef)
     Sub::Exporter::Progressive: 0.001010
     Test::CPAN::Changes: 0.23
     Test::CPAN::Meta: 0.23
