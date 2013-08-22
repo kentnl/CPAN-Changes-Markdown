@@ -45,7 +45,7 @@ has header_filter => (
 );
 has line_filter => ( 
     is => ro =>,
-    coerce => \&_coerce_undef_to_filter
+    coerce => \&_coerce_undef_to_filter,
     lazy => 1, 
     builder => sub {
         require CPAN::Changes::Markdown::Filter;
