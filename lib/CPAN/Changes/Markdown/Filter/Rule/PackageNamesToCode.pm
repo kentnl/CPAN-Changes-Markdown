@@ -22,10 +22,11 @@ my $lc_package_chars = 'a-z0-9';
 my $uc_package_chars = 'A-Z';
 my $package_chars    = $uc_package_chars . $lc_package_chars;
 
-my $re_camelnoun = qr/(\A|\A.*?\s) ( [$uc_package_chars][$lc_package_chars]+(?: [$uc_package_chars][$package_chars]* )+ ) (\z|\s.*\z)/msx;
-my $re_prefix    = qr/(\A|\A.*?\s) ( ::[$package_chars]+ (?: ::[$package_chars]+)*       ) (\z|\s.*\z)/msx;
-my $re_suffix    = qr/(\A|\A.*?\s) ( (?: [$package_chars]+:: )* [$package_chars]+::      ) (\z|\s.*\z)/msx;
-my $re_infix     = qr/(\A|\A.*?\s) ( [$package_chars]+   (?: ::[$package_chars]+)+       ) (\z|\s.*\z)/msx;
+my $re_camelnoun =
+  qr/(\A|\A.*?\s) ( [$uc_package_chars][$lc_package_chars]+(?: [$uc_package_chars][$package_chars]* )+ ) (\z|\s.*\z)/msx;
+my $re_prefix = qr/(\A|\A.*?\s) ( ::[$package_chars]+ (?: ::[$package_chars]+)*       ) (\z|\s.*\z)/msx;
+my $re_suffix = qr/(\A|\A.*?\s) ( (?: [$package_chars]+:: )* [$package_chars]+::      ) (\z|\s.*\z)/msx;
+my $re_infix  = qr/(\A|\A.*?\s) ( [$package_chars]+   (?: ::[$package_chars]+)+       ) (\z|\s.*\z)/msx;
 
 sub _inject_code_delim {
   my ( $self, $out, $before, $code, $after ) = @_;

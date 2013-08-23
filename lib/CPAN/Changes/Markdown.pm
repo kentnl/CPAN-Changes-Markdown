@@ -62,6 +62,7 @@ sub load_string {
   return $self->new( changes => CPAN::Changes->load_string($string) );
 }
 
+
 sub load_utf8 {
   my ( $self, $path ) = @_;
   require Path::Tiny;

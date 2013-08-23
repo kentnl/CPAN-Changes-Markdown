@@ -18,13 +18,13 @@ use Moo;
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
-has content     => ( is => ro =>, required => 1 );
+has content => ( is => ro =>, required => 1 );
 
 
 has before_text => ( is => ro =>, required => 1 );
 
 
-has after_text  => ( is => ro =>, required => 1 );
+has after_text => ( is => ro =>, required => 1 );
 
 
 sub create {

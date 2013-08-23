@@ -27,7 +27,7 @@ sub _inject_code_delim {
 }
 
 my $re_contains_number = qr/         \d                  /msx;
-my $re_numeric = qr/ (\A|\A.*?\s) ( [\d._]+ ) (\z|\s.*\z)/msx;
+my $re_numeric         = qr/ (\A|\A.*?\s) ( [\d._]+ ) (\z|\s.*\z)/msx;
 
 
 sub filter_plaintext {
