@@ -18,6 +18,8 @@ use Moo;
 with 'CPAN::Changes::Markdown::Role::Filter';
 
 
+## no critic (RequireArgUnpacking)
+
 sub process {
   return $_[1];
 }

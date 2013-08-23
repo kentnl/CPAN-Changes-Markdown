@@ -11,10 +11,14 @@ BEGIN {
 
 # ABSTRACT: A rule that only filters plaintext nodes.
 
+
 use Role::Tiny;
 
+
 requires 'filter_plaintext';
+
 with 'CPAN::Changes::Markdown::Role::Filter::Rule';
+
 
 
 sub filter {
@@ -45,6 +49,27 @@ CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filter
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    package Example::Rule;
+
+    use Role::Tiny::With;
+
+    with 'CPAN::Changes::Markdown::Role::Filter::Rule::PlainText';
+
+    sub filter_plaintext {
+        my ( $self, @nodes ) = @_;
+        return ( @nodes );
+    }
+
+=head1 ROLE REQUIRES
+
+=head2 C<filter_plaintext>
+
+=head1 METHODS
+
+=head2 C<filter>
 
 =begin MetaPOD::JSON v1.1.0
 

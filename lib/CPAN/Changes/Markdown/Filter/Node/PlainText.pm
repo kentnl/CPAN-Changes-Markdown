@@ -10,23 +10,23 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A text node that contains unmarkuped text.
+
+
 
 use Moo;
 
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
+
 has content => ( is => rw =>, required => 1 );
+
 
 sub create {
   my ( $self, $content ) = @_;
   return $self->new( content => $content );
 }
 
-sub substr {
-  my ( $self, $start, $length ) = @_;
-  my $content = substr $self->content, $start, $length;
-  return __PACKAGE__->new( content => $content );
-}
 
 sub to_s {
   my ( $self, ) = @_;
@@ -43,11 +43,35 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::Node::PlainText
+CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains unmarkuped text.
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::NodeUtil qw( :all );
+
+    my $plaintext = mk_node_plaintext("The text here");
+
+=head1 METHODS
+
+=head2 C<content>
+
+=head2 C<create>
+
+Slightly shorter hand for C<new>
+
+    $class->create( $text ) == $class->new( content => $text )
+
+=head2 C<to_s>
+
+Represent this node back as text.
+
+=head1 ATTRIBUTES
+
+=head2 C<content>
 
 =begin MetaPOD::JSON v1.1.0
 
