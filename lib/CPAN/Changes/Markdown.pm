@@ -26,6 +26,8 @@ has changes => (
     return CPAN::Changes->new();
   },
 );
+
+
 has header_filter => (
   is      => ro =>,
   lazy    => 1,
@@ -34,6 +36,8 @@ has header_filter => (
     return CPAN::Changes::Markdown::Filter->new( rules => [ rule_VersionsToCode, rule_UnderscoredToCode ] );
   }
 );
+
+
 has line_filter => (
   is      => ro =>,
   lazy    => 1,
@@ -50,6 +54,7 @@ sub load {
   require CPAN::Changes;
   return $self->new( changes => CPAN::Changes->load($path) );
 }
+
 
 sub load_string {
   my ( $self, $string ) = @_;
@@ -127,7 +132,7 @@ version 0.2.0
 
     use CPAN::Changes::Markdown;
 
-    my $changes = CPAN::Changes::Markdown->load( $path_to_changes_file );
+    my $changes = CPAN::Changes::Markdown->load_utf8( $path_to_changes_file );
 
     print $changes->serialize # emits Markdown
 
@@ -145,6 +150,16 @@ I plan to eventually have hook filters and stuff to highlight various tokens in 
 
     my $ccm = CPAN::Changes::Markdown->load( path/to/file );
 
+=head2 C<load_string>
+
+    my $ccm = CPAN::Changes::Markdown->load_string( "some text" );
+
+=head2 C<load_utf8>
+
+Same as C<load> except opens C<file> in C<utf8> mode.
+
+    my $ccm = CPAN::Changes::Markdown->load_utf8( path/to/file  );
+
 =head2 C<serialize>
 
     my $string = $ccm->serialize();
@@ -152,6 +167,14 @@ I plan to eventually have hook filters and stuff to highlight various tokens in 
 =head1 ATTRIBUTES
 
 =head2 C<changes>
+
+=head2 C<header_filter>
+
+A CPAN::Changes::Markdown::Filter object that can process a header.
+
+=head2 C<header_filter>
+
+A CPAN::Changes::Markdown::Filter object that can process a header.
 
 =begin MetaPOD::JSON v1.1.0
 
