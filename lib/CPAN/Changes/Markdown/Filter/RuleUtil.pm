@@ -10,11 +10,15 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '0.2.0';
 }
 
+# ABSTRACT: short-hand for constructing rule objects.
+
 
 
 use Sub::Exporter::Progressive -setup =>
   { exports => [qw( rule_NumericsToCode rule_UnderscoredToCode rule_PackageNamesToCode rule_VersionsToCode )] };
 
+
+## no critic ( RequireArgUnpacking Capitalization )
 
 sub rule_NumericsToCode {
   require CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
@@ -49,7 +53,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::RuleUtil
+CPAN::Changes::Markdown::Filter::RuleUtil - short-hand for constructing rule objects.
 
 =head1 VERSION
 

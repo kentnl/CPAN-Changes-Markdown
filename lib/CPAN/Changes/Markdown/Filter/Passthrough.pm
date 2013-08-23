@@ -9,10 +9,14 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Passthrough::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A Filter drop-in that doesn't process anything.
+
+
 
 use Moo;
 
 with 'CPAN::Changes::Markdown::Role::Filter';
+
 
 sub process {
   return $_[1];
@@ -28,11 +32,21 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::Passthrough
+CPAN::Changes::Markdown::Filter::Passthrough - A Filter drop-in that doesn't process anything.
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    my $filter = CPAN::Changes::Markdown::Filter::Passthrough->new();
+    my $output = $filter->process( $input );
+    # $output == $input
+
+=head1 METHODS
+
+=head2 C<process>
 
 =begin MetaPOD::JSON v1.1.0
 
