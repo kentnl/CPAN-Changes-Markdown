@@ -9,7 +9,10 @@ BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A parse node of some kind
+
 use Role::Tiny;
+
 
 requires 'to_s';
 
@@ -24,11 +27,15 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Role::Filter::Node
+CPAN::Changes::Markdown::Role::Filter::Node - A parse node of some kind
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 ROLE REQUIRES
+
+=head2 C<to_s>
 
 =begin MetaPOD::JSON v1.1.0
 

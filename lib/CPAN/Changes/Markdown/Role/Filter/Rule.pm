@@ -9,7 +9,10 @@ BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A step filter
+
 use Role::Tiny;
+
 
 requires 'filter';
 
@@ -24,11 +27,15 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Role::Filter::Rule
+CPAN::Changes::Markdown::Role::Filter::Rule - A step filter
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 ROLE REQUIRES
+
+=head2 C<filter>
 
 =begin MetaPOD::JSON v1.1.0
 

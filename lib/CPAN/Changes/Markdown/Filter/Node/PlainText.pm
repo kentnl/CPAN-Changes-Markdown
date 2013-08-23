@@ -10,7 +10,7 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.0';
 }
 
-# ABSTRACT: A text node that contains unmarkuped text.
+# ABSTRACT: A text node that contains markup-free text.
 
 
 
@@ -43,7 +43,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains unmarkuped text.
+CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains markup-free text.
 
 =head1 VERSION
 

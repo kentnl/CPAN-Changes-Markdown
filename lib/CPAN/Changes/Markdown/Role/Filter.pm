@@ -9,8 +9,11 @@ BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A text filter of some kind
+
 
 use Role::Tiny;
+
 
 requires 'process';
 
@@ -24,11 +27,15 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Role::Filter
+CPAN::Changes::Markdown::Role::Filter - A text filter of some kind
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 ROLE REQUIRES
+
+=head2 C<process>
 
 =begin MetaPOD::JSON v1.1.0
 
