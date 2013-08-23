@@ -10,13 +10,22 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.2.0';
 }
 
+# ABSTRACT: A region of text that is marked up
+
+
 
 use Moo;
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
-has content     => ( is => rw =>, required => 1 );
+
+has content     => ( is => ro =>, required => 1 );
+
+
 has before_text => ( is => ro =>, required => 1 );
+
+
 has after_text  => ( is => ro =>, required => 1 );
+
 
 sub create {
   my ( $self, $before, $content, $after ) = @_;
@@ -27,11 +36,6 @@ sub create {
   );
 }
 
-sub substr {
-  my ( $self, $start, $length ) = @_;
-  my $content = substr $self->content, $start, $length;
-  return __PACKAGE__->new( content => $content );
-}
 
 sub to_s {
   my ($self) = @_;
@@ -48,11 +52,45 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::Node::DelimitedText
+CPAN::Changes::Markdown::Filter::Node::DelimitedText - A region of text that is marked up
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::NodeUtil qw( :all );
+
+    my $delimitedtext = mk_node_delimitedtext(q[`], "The text here", q[`]);
+
+=head1 METHODS
+
+=head2 C<content>
+
+=head2 C<before_text>
+
+=head2 C<after_text>
+
+=head2 C<create>
+
+A short-hand for C<new>
+
+    $class->create($a,$b,$c) == $class->new(
+        before_text => $a,
+        content     => $b,
+        after_text  => $c,
+    );
+
+=head2 C<to_s>
+
+=head1 ATTRIBUTES
+
+=head2 C<content>
+
+=head2 C<before_text>
+
+=head2 C<after_text>
 
 =begin MetaPOD::JSON v1.1.0
 
