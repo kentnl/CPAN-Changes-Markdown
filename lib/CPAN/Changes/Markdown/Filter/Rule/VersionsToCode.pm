@@ -21,19 +21,22 @@ with "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText";
 sub _inject_code_delim {
   my ( $self, $out, $before, $code, $after ) = @_;
   push @{$out}, mk_node_plaintext($before);
-  push @{$out}, mk_node_delimitedtext( '`', $code, '`' );
+  push @{$out}, mk_node_delimitedtext( q{`}, $code, q{`} );
   push @{$out}, $self->filter_plaintext( mk_node_plaintext($after) );
   return @{$out};
 }
 
+my $re_version = qr/(\A|\A.*?\s) ( v? [\d._]+ (?:-TRIAL)? ) (\z|\s.*\z)/msx;
+my $re_number  = qr/                   \d                              /msx;
+
 sub filter_plaintext {
   my ( $self, $input ) = @_;
   my @output;
-  if ( $input->content !~ /\d/ ) {
+  if ( $input->content !~ $re_number ) {
     return $input;
   }
 
-  if ( $input->content =~ /(\A|\A.*?\s)(v?[\d._]+(?:-TRIAL)?)(\z|\s.*\z)/ms ) {
+  if ( $input->content =~ $re_version ) {
     return $self->_inject_code_delim( [], $1, $2, $3 );
   }
   return $input;

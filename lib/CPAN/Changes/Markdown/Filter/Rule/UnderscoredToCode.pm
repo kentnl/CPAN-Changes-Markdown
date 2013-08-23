@@ -25,7 +25,7 @@ my $re_infix  = qr/(\A|\A.*?\s) ( [^_\s]+ _+ [^_\s]+ (?: _+ [^_\s]+ )*   ) (\z|\
 sub _inject_code_delim {
   my ( $self, $out, $before, $code, $after ) = @_;
   push @{$out}, mk_node_plaintext($before);
-  push @{$out}, mk_node_delimitedtext( '`', $code, '`' );
+  push @{$out}, mk_node_delimitedtext( q{`}, $code, q{`} );
   push @{$out}, $self->filter_plaintext( mk_node_plaintext($after) );
   return @{$out};
 }
