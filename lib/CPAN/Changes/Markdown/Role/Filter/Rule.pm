@@ -1,12 +1,12 @@
 use strict;
 use warnings;
- 
+
 package CPAN::Changes::Markdown::Role::Filter::Rule;
 BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::Rule::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.2.0';
 }
 
 use Role::Tiny;
@@ -28,7 +28,7 @@ CPAN::Changes::Markdown::Role::Filter::Rule
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

@@ -6,7 +6,7 @@ BEGIN {
   $CPAN::Changes::Markdown::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::VERSION = '0.2.0';
 }
 
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
@@ -26,42 +26,42 @@ has changes => (
     return CPAN::Changes->new();
   },
 );
-has header_filter => ( 
-    is => ro =>,
-    lazy => 1, 
-    builder => sub {
-        require CPAN::Changes::Markdown::Filter;
-        return CPAN::Changes::Markdown::Filter->new(
-            rules => [ rule_VersionsToCode, rule_UnderscoredToCode ]
-        );
-    }
+has header_filter => (
+  is      => ro =>,
+  lazy    => 1,
+  builder => sub {
+    require CPAN::Changes::Markdown::Filter;
+    return CPAN::Changes::Markdown::Filter->new( rules => [ rule_VersionsToCode, rule_UnderscoredToCode ] );
+  }
 );
-has line_filter => ( 
-    is => ro =>,
-    lazy => 1, 
-    builder => sub {
-        require CPAN::Changes::Markdown::Filter;
-        return CPAN::Changes::Markdown::Filter->new(
-            rules => [ rule_VersionsToCode, rule_UnderscoredToCode, rule_PackageNamesToCode ]
-        );
-    }
+has line_filter => (
+  is      => ro =>,
+  lazy    => 1,
+  builder => sub {
+    require CPAN::Changes::Markdown::Filter;
+    return CPAN::Changes::Markdown::Filter->new(
+      rules => [ rule_VersionsToCode, rule_UnderscoredToCode, rule_PackageNamesToCode ] );
+  }
 );
+
 
 sub load {
   my ( $self, $path ) = @_;
   require CPAN::Changes;
   return $self->new( changes => CPAN::Changes->load($path) );
 }
+
 sub load_string {
-    my ($self, $string ) = @_;
-    require CPAN::Changes;
-    return $self->new( changes => CPAN::Changes->load_string($string));
+  my ( $self, $string ) = @_;
+  require CPAN::Changes;
+  return $self->new( changes => CPAN::Changes->load_string($string) );
 }
+
 sub load_utf8 {
-    my ( $self, $path ) = @_;
-    require Path::Tiny;
-    require CPAN::Changes;
-    return $self->new( changes => CPAN::Changes->load_string( Path::Tiny::path($path)->slurp_utf8 ));
+  my ( $self, $path ) = @_;
+  require Path::Tiny;
+  require CPAN::Changes;
+  return $self->new( changes => CPAN::Changes->load_string( Path::Tiny::path($path)->slurp_utf8 ) );
 }
 
 sub _serialize_release {
@@ -121,7 +121,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =head1 SYNOPSIS
 

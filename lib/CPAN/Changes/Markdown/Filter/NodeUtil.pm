@@ -7,22 +7,20 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::NodeUtil::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.2.0';
 }
 
 
-use Sub::Exporter::Progressive -setup => {
-    exports => [ qw( mk_node_plaintext mk_node_delimitedtext ) ]
-};
+use Sub::Exporter::Progressive -setup => { exports => [qw( mk_node_plaintext mk_node_delimitedtext )] };
 
 sub mk_node_plaintext {
-    require CPAN::Changes::Markdown::Filter::Node::PlainText;
-    return CPAN::Changes::Markdown::Filter::Node::PlainText->create(@_);
+  require CPAN::Changes::Markdown::Filter::Node::PlainText;
+  return CPAN::Changes::Markdown::Filter::Node::PlainText->create(@_);
 }
 
 sub mk_node_delimitedtext {
-    require CPAN::Changes::Markdown::Filter::Node::DelimitedText;
-    return CPAN::Changes::Markdown::Filter::Node::DelimitedText->create(@_);
+  require CPAN::Changes::Markdown::Filter::Node::DelimitedText;
+  return CPAN::Changes::Markdown::Filter::Node::DelimitedText->create(@_);
 }
 
 1;
@@ -39,7 +37,7 @@ CPAN::Changes::Markdown::Filter::NodeUtil
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

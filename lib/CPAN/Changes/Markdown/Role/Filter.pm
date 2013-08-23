@@ -1,19 +1,18 @@
 use strict;
 use warnings;
- 
+
 package CPAN::Changes::Markdown::Role::Filter;
 BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Role::Filter::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Role::Filter::VERSION = '0.2.0';
 }
 
 
-use Role::Tiny; 
+use Role::Tiny;
 
 requires 'process';
-
 
 1;
 
@@ -29,14 +28,14 @@ CPAN::Changes::Markdown::Role::Filter
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 
 {
     "namespace":"CPAN::Changes::Markdown::Role::Filter",
     "interface":"role"
-    
+
 }
 
 =end MetaPOD::JSON

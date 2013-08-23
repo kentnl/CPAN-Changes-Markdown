@@ -1,12 +1,12 @@
 use strict;
 use warnings;
- 
+
 package CPAN::Changes::Markdown::Filter;
 BEGIN {
   $CPAN::Changes::Markdown::Filter::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::VERSION = '0.2.0';
 }
 
 use Moo 1.000008;
@@ -15,17 +15,21 @@ use CPAN::Changes::Markdown::Filter::NodeUtil qw(mk_node_plaintext);
 
 with 'CPAN::Changes::Markdown::Role::Filter';
 
-has rules => ( is => ro =>, lazy => 1, builder => sub {
-    []
-});
+has rules => (
+  is      => ro =>,
+  lazy    => 1,
+  builder => sub {
+    [];
+  }
+);
 
 sub process {
-    my ( $self, $input ) = @_;
-    my ( @input ) = ( mk_node_plaintext($input) ); 
-    for my $rule ( @{ $self->rules } ) {
-        @input = $rule->filter( @input );
-    }
-    return join q{}, map { $_->to_s } @input;
+  my ( $self, $input ) = @_;
+  my (@input) = ( mk_node_plaintext($input) );
+  for my $rule ( @{ $self->rules } ) {
+    @input = $rule->filter(@input);
+  }
+  return join q{}, map { $_->to_s } @input;
 }
 
 1;
@@ -42,7 +46,7 @@ CPAN::Changes::Markdown::Filter
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

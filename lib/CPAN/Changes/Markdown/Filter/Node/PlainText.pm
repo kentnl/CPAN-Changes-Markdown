@@ -1,13 +1,13 @@
 
 use strict;
 use warnings;
- 
+
 package CPAN::Changes::Markdown::Filter::Node::PlainText;
 BEGIN {
   $CPAN::Changes::Markdown::Filter::Node::PlainText::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.0';
 }
 
 
@@ -18,19 +18,19 @@ with 'CPAN::Changes::Markdown::Role::Filter::Node';
 has content => ( is => rw =>, required => 1 );
 
 sub create {
-    my ( $self, $content ) = @_;
-    return $self->new( content => $content );
+  my ( $self, $content ) = @_;
+  return $self->new( content => $content );
 }
 
 sub substr {
-    my ($self, $start, $length ) = @_;
-    my $content = substr $self->content, $start, $length;
-    return __PACKAGE__->new( content => $content );
+  my ( $self, $start, $length ) = @_;
+  my $content = substr $self->content, $start, $length;
+  return __PACKAGE__->new( content => $content );
 }
 
 sub to_s {
-    my ( $self, ) = @_;
-    return $self->content;
+  my ( $self, ) = @_;
+  return $self->content;
 }
 
 1;
@@ -47,7 +47,7 @@ CPAN::Changes::Markdown::Filter::Node::PlainText
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

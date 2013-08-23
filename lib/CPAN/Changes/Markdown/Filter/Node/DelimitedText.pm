@@ -7,8 +7,9 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Node::DelimitedText::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.2.0';
 }
+
 
 use Moo;
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
@@ -18,23 +19,23 @@ has before_text => ( is => ro =>, required => 1 );
 has after_text  => ( is => ro =>, required => 1 );
 
 sub create {
-    my ( $self, $before, $content, $after ) = @_;
-    return $self->new(
-        content     => $content,
-        before_text => $before,
-        after_text  => $after
-    );
+  my ( $self, $before, $content, $after ) = @_;
+  return $self->new(
+    content     => $content,
+    before_text => $before,
+    after_text  => $after
+  );
 }
 
 sub substr {
-    my ( $self, $start, $length ) = @_;
-    my $content = substr $self->content, $start, $length;
-    return __PACKAGE__->new( content => $content );
+  my ( $self, $start, $length ) = @_;
+  my $content = substr $self->content, $start, $length;
+  return __PACKAGE__->new( content => $content );
 }
 
 sub to_s {
-    my ( $self ) = @_;
-    return $self->before_text . $self->content . $self->after_text;
+  my ($self) = @_;
+  return $self->before_text . $self->content . $self->after_text;
 }
 
 1;
@@ -51,7 +52,7 @@ CPAN::Changes::Markdown::Filter::Node::DelimitedText
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

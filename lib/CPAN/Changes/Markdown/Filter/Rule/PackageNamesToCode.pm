@@ -6,7 +6,7 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.2.0';
 }
 
 # ABSTRACT: Quote things that look like Perl Package names to Code
@@ -65,7 +65,7 @@ CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode - Quote things that lo
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =head1 SYNOPSIS
 
@@ -79,7 +79,7 @@ This filter translates things that resemble package names (but not simply nouns)
 
 =item * foo::foo
 
-=item * foo::foo::foo ...etc 
+=item * foo::foo::foo ...etc
 
 =begin MetaPOD::JSON v1.1.0
 

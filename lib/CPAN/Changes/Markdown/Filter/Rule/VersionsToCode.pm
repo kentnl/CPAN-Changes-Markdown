@@ -6,7 +6,7 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::Rule::VersionsToCode::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $CPAN::Changes::Markdown::Filter::Rule::VersionsToCode::VERSION = '0.1.1';
+  $CPAN::Changes::Markdown::Filter::Rule::VersionsToCode::VERSION = '0.2.0';
 }
 
 # ABSTRACT: Quote things that look like numbers as code entries.
@@ -24,6 +24,7 @@ sub _inject_code_delim {
   push @{$out}, $self->filter_plaintext( mk_node_plaintext($after) );
   return @{$out};
 }
+
 sub filter_plaintext {
   my ( $self, $input ) = @_;
   my @output;
@@ -51,7 +52,7 @@ CPAN::Changes::Markdown::Filter::Rule::VersionsToCode - Quote things that look l
 
 =head1 VERSION
 
-version 0.1.1
+version 0.2.0
 
 =begin MetaPOD::JSON v1.1.0
 

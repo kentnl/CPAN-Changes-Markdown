@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "CPAN-Changes-Markdown",
-  "dist_version" => "0.1.1",
+  "dist_version" => "0.2.0",
   "license" => "perl",
   "module_name" => "CPAN::Changes::Markdown",
   "recommends" => {},
@@ -36,7 +36,8 @@ my %module_build_args = (
   "test_requires" => {
     "Capture::Tiny" => 0,
     "Test::More" => "0.98",
-    "blib" => 0
+    "blib" => 0,
+    "utf8" => 0
   }
 );
 
