@@ -34,7 +34,7 @@ has header_filter => (
   builder => sub {
     require CPAN::Changes::Markdown::Filter;
     return CPAN::Changes::Markdown::Filter->new( rules => [ rule_VersionsToCode, rule_UnderscoredToCode ] );
-  }
+  },
 );
 
 
@@ -45,7 +45,7 @@ has line_filter => (
     require CPAN::Changes::Markdown::Filter;
     return CPAN::Changes::Markdown::Filter->new(
       rules => [ rule_VersionsToCode, rule_UnderscoredToCode, rule_PackageNamesToCode ] );
-  }
+  },
 );
 
 

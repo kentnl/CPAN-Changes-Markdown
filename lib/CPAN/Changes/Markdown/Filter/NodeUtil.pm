@@ -10,13 +10,20 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.2.0';
 }
 
+# ABSTRACT: short-hand node construction functions
+
+
 
 use Sub::Exporter::Progressive -setup => { exports => [qw( mk_node_plaintext mk_node_delimitedtext )] };
+
+
+## no critic ( RequireArgUnpacking )
 
 sub mk_node_plaintext {
   require CPAN::Changes::Markdown::Filter::Node::PlainText;
   return CPAN::Changes::Markdown::Filter::Node::PlainText->create(@_);
 }
+
 
 sub mk_node_delimitedtext {
   require CPAN::Changes::Markdown::Filter::Node::DelimitedText;
@@ -33,11 +40,23 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter::NodeUtil
+CPAN::Changes::Markdown::Filter::NodeUtil - short-hand node construction functions
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::NodeUtil;
+
+    my $node = mk_node_plaintext('text');
+
+=head1 EXPORTS
+
+=head2 C<mk_node_plaintext>
+
+=head2 C<mk_node_delimitedtext>
 
 =begin MetaPOD::JSON v1.1.0
 

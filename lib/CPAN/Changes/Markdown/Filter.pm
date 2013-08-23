@@ -9,8 +9,7 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::VERSION = '0.2.0';
 }
 
-# ABSTRACT: a simple pluggable staged text filter for Markdown translation
-
+# ABSTRACT: a simple plug-in based, staged text filter for Markdown translation
 
 
 use Moo 1.000008;
@@ -25,7 +24,7 @@ has rules => (
   lazy    => 1,
   builder => sub {
     [];
-  }
+  },
 );
 
 
@@ -48,7 +47,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter - a simple pluggable staged text filter for Markdown translation
+CPAN::Changes::Markdown::Filter - a simple plug-in based, staged text filter for Markdown translation
 
 =head1 VERSION
 
