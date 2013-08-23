@@ -16,7 +16,7 @@ use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_deli
 
 
 
-with "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText";
+with 'CPAN::Changes::Markdown::Role::Filter::Rule::PlainText';
 
 sub _inject_code_delim {
   my ( $self, $out, $before, $code, $after ) = @_;
@@ -31,7 +31,6 @@ my $re_number  = qr/                   \d                              /msx;
 
 sub filter_plaintext {
   my ( $self, $input ) = @_;
-  my @output;
   if ( $input->content !~ $re_number ) {
     return $input;
   }

@@ -16,7 +16,7 @@ use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_deli
 
 
 
-with "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText";
+with 'CPAN::Changes::Markdown::Role::Filter::Rule::PlainText';
 
 my $re_prefix = qr/(\A|\A.*?\s) ( _+ [^_\s]+         (?: _+ [^_\s]+ )*   ) (\z|\s.*\z)/msx;
 my $re_suffix = qr/(\A|\A.*?\s) ( [^_\s]+ _+         (?: [^_\s]+ _+ )*   ) (\z|\s.*\z)/msx;
@@ -66,7 +66,7 @@ version 0.2.0
 
     my $instance = rule_UnderscoredToCode( @args );
 
-This filter translates things with _ as part of their token to codeblocks.
+This filter translates things with _ as part of their token to code spans.
 
 =begin MetaPOD::JSON v1.1.0
 
