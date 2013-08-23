@@ -9,7 +9,7 @@ BEGIN {
   $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.2.0';
 }
 
-# ABSTRACT: A rule that only filters plaintext nodes.
+# ABSTRACT: A rule that only filters C<plaintext> nodes.
 
 
 use Role::Tiny;
@@ -44,7 +44,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filters plaintext nodes.
+CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filters C<plaintext> nodes.
 
 =head1 VERSION
 

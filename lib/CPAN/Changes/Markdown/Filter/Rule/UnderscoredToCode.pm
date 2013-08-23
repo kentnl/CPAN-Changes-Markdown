@@ -30,6 +30,7 @@ sub _inject_code_delim {
   return @{$out};
 }
 
+
 sub filter_plaintext {
   my ( $self, $input ) = @_;
   if ( $input->content =~ $re_prefix ) {
@@ -67,6 +68,10 @@ version 0.2.0
     my $instance = rule_UnderscoredToCode( @args );
 
 This filter translates things with _ as part of their token to code spans.
+
+=head1 METHODS
+
+=head2 C<filter_plaintext>
 
 =begin MetaPOD::JSON v1.1.0
 

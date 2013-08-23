@@ -35,6 +35,7 @@ sub _inject_code_delim {
   return @{$out};
 }
 
+
 sub filter_plaintext {
   my ( $self, $input ) = @_;
   if ( $input->content =~ $re_camelnoun ) {
@@ -85,6 +86,12 @@ This filter translates things that resemble package names (but not simply nouns)
 =item * foo::foo
 
 =item * foo::foo::foo ...etc
+
+=back
+
+=head1 METHODS
+
+=head2 C<filter_plaintext>
 
 =begin MetaPOD::JSON v1.1.0
 

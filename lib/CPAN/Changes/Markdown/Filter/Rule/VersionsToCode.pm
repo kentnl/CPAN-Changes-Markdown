@@ -29,6 +29,7 @@ sub _inject_code_delim {
 my $re_version = qr/(\A|\A.*?\s) ( v? [\d._]+ (?:-TRIAL)? ) (\z|\s.*\z)/msx;
 my $re_number  = qr/                   \d                              /msx;
 
+
 sub filter_plaintext {
   my ( $self, $input ) = @_;
   if ( $input->content !~ $re_number ) {
@@ -62,6 +63,10 @@ version 0.2.0
     use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
 
     my $instance = rule_VersionsToCode( @args );
+
+=head1 METHODS
+
+=head2 C<filter_plaintext>
 
 =begin MetaPOD::JSON v1.1.0
 
