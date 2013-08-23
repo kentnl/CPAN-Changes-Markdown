@@ -9,11 +9,16 @@ BEGIN {
   $CPAN::Changes::Markdown::Filter::VERSION = '0.2.0';
 }
 
+# ABSTRACT: a simple pluggable staged text filter for Markdown translation
+
+
+
 use Moo 1.000008;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw(mk_node_plaintext);
 
 
 with 'CPAN::Changes::Markdown::Role::Filter';
+
 
 has rules => (
   is      => ro =>,
@@ -22,6 +27,7 @@ has rules => (
     [];
   }
 );
+
 
 sub process {
   my ( $self, $input ) = @_;
@@ -42,11 +48,31 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Filter
+CPAN::Changes::Markdown::Filter - a simple pluggable staged text filter for Markdown translation
 
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+    use CPAN::Changes::Markdown::Filter;
+    my $filter = CPAN::Changes::Markdown::Filter->new(
+        rules => [ rule_NumericToCode ]
+    );
+
+=head1 METHODS
+
+=head2 C<rules>
+
+=head2 C<process>
+
+    my $output = $filter->process( $input );
+
+=head1 ATTRIBUTES
+
+=head2 C<rules>
 
 =begin MetaPOD::JSON v1.1.0
 

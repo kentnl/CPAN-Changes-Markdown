@@ -69,6 +69,10 @@ version 0.2.0
 
 =head1 SYNOPSIS
 
+    use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
+    my $instance = rule_PackageNamesToCode( @args );
+
 This filter translates things that resemble package names (but not simply nouns) into codeblocks.
 
 =over 4

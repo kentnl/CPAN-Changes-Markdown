@@ -15,6 +15,7 @@ use Moo;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
 
 
+
 with "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText";
 
 sub _inject_code_delim {
@@ -53,6 +54,12 @@ CPAN::Changes::Markdown::Filter::Rule::VersionsToCode - Quote things that look l
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
+    my $instance = rule_VersionsToCode( @args );
 
 =begin MetaPOD::JSON v1.1.0
 

@@ -11,23 +11,28 @@ BEGIN {
 }
 
 
+
 use Sub::Exporter::Progressive -setup =>
   { exports => [qw( rule_NumericsToCode rule_UnderscoredToCode rule_PackageNamesToCode rule_VersionsToCode )] };
+
 
 sub rule_NumericsToCode {
   require CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
   return CPAN::Changes::Markdown::Filter::Rule::NumericsToCode->new(@_);
 }
 
+
 sub rule_UnderscoredToCode {
   require CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode;
   return CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode->new(@_);
 }
 
+
 sub rule_PackageNamesToCode {
   require CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
   return CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode->new(@_);
 }
+
 
 sub rule_VersionsToCode {
   require CPAN::Changes::Markdown::Filter::Rule::VersionsToCode;
@@ -49,6 +54,22 @@ CPAN::Changes::Markdown::Filter::RuleUtil
 =head1 VERSION
 
 version 0.2.0
+
+=head1 SYNOPSIS
+
+    use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
+    rule_NumericsToCode() # Create instance passing @_
+
+=head1 EXPORTS
+
+=head2 C<rule_NumericsToCode>
+
+=head2 C<rule_UnderscoredToCode>
+
+=head2 C<rule_PackageNamesToCode>
+
+=head2 C<rule_VersionsToCode>
 
 =begin MetaPOD::JSON v1.1.0
 

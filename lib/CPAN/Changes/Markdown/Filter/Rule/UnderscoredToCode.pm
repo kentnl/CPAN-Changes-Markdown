@@ -62,6 +62,10 @@ version 0.2.0
 
 =head1 SYNOPSIS
 
+    use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
+    my $instance = rule_UnderscoredToCode( @args );
+
 This filter translates things with _ as part of their token to codeblocks.
 
 =begin MetaPOD::JSON v1.1.0
