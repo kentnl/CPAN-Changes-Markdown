@@ -1,5 +1,7 @@
 Release history for CPAN-Changes-Markdown
 
+0.2.2 2013-09-25T01:22:23Z
+
 0.2.1 2013-08-30T19:50:44Z
  [!Minor]
  - Bump to get new compile test
