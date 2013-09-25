@@ -1,6 +1,14 @@
 Release history for CPAN-Changes-Markdown
 
-0.2.2 2013-09-25T01:22:23Z
+0.2.2 2013-09-25T01:24:07Z
+ [Bugfix]
+ - Get latest compile test to avoid bugs on Win32
+
+ [Dependencies::Added / test requires]
+ - File::Spec
+
+ [Dependencies::Changed / develop suggests]
+ - Dist::Zilla::PluginBundle::Author::KENTNL v1.8.1 → v1.8.3
 
 0.2.1 2013-08-30T19:50:44Z
  [!Minor]
