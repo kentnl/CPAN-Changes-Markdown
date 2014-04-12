@@ -2,21 +2,41 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::VERSION = '0.2.3';
 # ABSTRACT: a simple plug-in based, staged text filter for Markdown translation
+
+
+
+
+
+
+
+
+
 
 
 use Moo 1.000008;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw(mk_node_plaintext);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 with 'CPAN::Changes::Markdown::Role::Filter';
+
+
+
+
+
 
 
 has rules => (
@@ -26,6 +46,11 @@ has rules => (
     [];
   },
 );
+
+
+
+
+
 
 
 sub process {
@@ -43,7 +68,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -51,7 +76,7 @@ CPAN::Changes::Markdown::Filter - a simple plug-in based, staged text filter for
 
 =head1 VERSION
 
-version 0.2.2
+version 0.2.3
 
 =head1 SYNOPSIS
 
@@ -91,7 +116,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

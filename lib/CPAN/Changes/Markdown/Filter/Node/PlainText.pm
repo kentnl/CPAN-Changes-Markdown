@@ -3,14 +3,28 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Node::PlainText;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Node::PlainText::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.3';
 # ABSTRACT: A text node that contains markup-free text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -19,13 +33,30 @@ use Moo;
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
+
+
+
+
+
 has content => ( is => rw =>, required => 1 );
+
+
+
+
+
+
+
 
 
 sub create {
   my ( $self, $content ) = @_;
   return $self->new( content => $content );
 }
+
+
+
+
+
 
 
 sub to_s {
@@ -39,7 +70,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -47,7 +78,7 @@ CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains mar
 
 =head1 VERSION
 
-version 0.2.2
+version 0.2.3
 
 =head1 SYNOPSIS
 
@@ -91,7 +122,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

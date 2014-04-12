@@ -2,17 +2,43 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown;
-BEGIN {
-  $CPAN::Changes::Markdown::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::VERSION = '0.2.3';
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
 use Moo 1.000008;
 use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,6 +54,11 @@ has changes => (
 );
 
 
+
+
+
+
+
 has header_filter => (
   is      => ro =>,
   lazy    => 1,
@@ -36,6 +67,11 @@ has header_filter => (
     return CPAN::Changes::Markdown::Filter->new( rules => [ rule_VersionsToCode, rule_UnderscoredToCode ] );
   },
 );
+
+
+
+
+
 
 
 has line_filter => (
@@ -49,6 +85,11 @@ has line_filter => (
 );
 
 
+
+
+
+
+
 sub load {
   my ( $self, $path ) = @_;
   require CPAN::Changes;
@@ -56,11 +97,23 @@ sub load {
 }
 
 
+
+
+
+
+
 sub load_string {
   my ( $self, $string ) = @_;
   require CPAN::Changes;
   return $self->new( changes => CPAN::Changes->load_string($string) );
 }
+
+
+
+
+
+
+
 
 
 sub load_utf8 {
@@ -91,6 +144,11 @@ sub _serialize_release {
 }
 
 
+
+
+
+
+
 sub serialize {
   my ( $self, %args ) = @_;
   my %release_args;
@@ -119,7 +177,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -127,7 +185,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 0.2.2
+version 0.2.3
 
 =head1 SYNOPSIS
 
@@ -194,7 +252,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

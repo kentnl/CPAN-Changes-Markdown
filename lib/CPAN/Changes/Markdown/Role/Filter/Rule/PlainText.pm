@@ -2,22 +2,47 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
-BEGIN {
-  $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.2.3';
 # ABSTRACT: A rule that only filters C<plaintext> nodes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 use Role::Tiny;
 
 
+
+
+
 requires 'filter_plaintext';
 
 with 'CPAN::Changes::Markdown::Role::Filter::Rule';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,7 +65,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -48,7 +73,7 @@ CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filter
 
 =head1 VERSION
 
-version 0.2.2
+version 0.2.3
 
 =head1 SYNOPSIS
 
@@ -88,7 +113,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

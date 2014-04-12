@@ -2,17 +2,32 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '0.2.3';
 # ABSTRACT: Quote things containing an underscore as Code
 
 use Moo;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,6 +44,9 @@ sub _inject_code_delim {
   push @{$out}, $self->filter_plaintext( mk_node_plaintext($after) );
   return @{$out};
 }
+
+
+
 
 
 sub filter_plaintext {
@@ -51,7 +69,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -59,7 +77,7 @@ CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode - Quote things containi
 
 =head1 VERSION
 
-version 0.2.2
+version 0.2.3
 
 =head1 SYNOPSIS
 
@@ -91,7 +109,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
