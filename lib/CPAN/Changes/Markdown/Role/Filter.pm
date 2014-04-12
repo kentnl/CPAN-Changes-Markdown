@@ -21,7 +21,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Role::Tiny;
+use Role::Tiny qw( requires );
 
 
 

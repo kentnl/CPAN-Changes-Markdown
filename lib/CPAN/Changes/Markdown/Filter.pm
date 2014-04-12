@@ -19,7 +19,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Moo 1.000008;
+use Moo 1.000008 qw( with has );
 use CPAN::Changes::Markdown::Filter::NodeUtil qw(mk_node_plaintext);
 
 

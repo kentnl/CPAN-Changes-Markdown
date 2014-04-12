@@ -31,7 +31,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Moo;
+use Moo qw( with has );
 
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 

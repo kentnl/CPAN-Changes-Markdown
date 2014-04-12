@@ -31,7 +31,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Moo;
+use Moo qw( with has );
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
@@ -40,7 +40,7 @@ with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
 
-has content => ( is => ro =>, required => 1 );
+has content => ( is => ro =>, required => 1, );
 
 
 
@@ -48,7 +48,7 @@ has content => ( is => ro =>, required => 1 );
 
 
 
-has before_text => ( is => ro =>, required => 1 );
+has before_text => ( is => ro =>, required => 1, );
 
 
 
@@ -56,7 +56,7 @@ has before_text => ( is => ro =>, required => 1 );
 
 
 
-has after_text => ( is => ro =>, required => 1 );
+has after_text => ( is => ro =>, required => 1, );
 
 
 
@@ -75,7 +75,7 @@ sub create {
   return $self->new(
     content     => $content,
     before_text => $before,
-    after_text  => $after
+    after_text  => $after,
   );
 }
 
