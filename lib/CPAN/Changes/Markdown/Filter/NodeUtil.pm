@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::NodeUtil;
-$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.002003';
 # ABSTRACT: short-hand node construction functions
 
 
@@ -61,7 +61,7 @@ CPAN::Changes::Markdown::Filter::NodeUtil - short-hand node construction functio
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

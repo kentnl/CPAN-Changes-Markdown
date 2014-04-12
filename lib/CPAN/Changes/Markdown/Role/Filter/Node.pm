@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Role::Filter::Node;
-$CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '0.002003';
 # ABSTRACT: A parse node of some kind
 
 use Role::Tiny;
@@ -38,7 +38,7 @@ CPAN::Changes::Markdown::Role::Filter::Node - A parse node of some kind
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 ROLE REQUIRES
 

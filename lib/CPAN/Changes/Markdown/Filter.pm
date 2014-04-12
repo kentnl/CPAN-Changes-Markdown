@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter;
-$CPAN::Changes::Markdown::Filter::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::VERSION = '0.002003';
 # ABSTRACT: a simple plug-in based, staged text filter for Markdown translation
 
 
@@ -76,7 +76,7 @@ CPAN::Changes::Markdown::Filter - a simple plug-in based, staged text filter for
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

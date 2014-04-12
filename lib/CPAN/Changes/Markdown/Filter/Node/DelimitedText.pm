@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Node::DelimitedText;
-$CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.002003';
 # ABSTRACT: A region of text that is marked up
 
 
@@ -99,7 +99,7 @@ CPAN::Changes::Markdown::Filter::Node::DelimitedText - A region of text that is 
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

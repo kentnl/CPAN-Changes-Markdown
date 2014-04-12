@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Node::PlainText;
-$CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.002003';
 # ABSTRACT: A text node that contains markup-free text.
 
 
@@ -78,7 +78,7 @@ CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains mar
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule;
-$CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.002003';
 # ABSTRACT: A step filter
 
 use Role::Tiny;
@@ -38,7 +38,7 @@ CPAN::Changes::Markdown::Role::Filter::Rule - A step filter
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 ROLE REQUIRES
 
