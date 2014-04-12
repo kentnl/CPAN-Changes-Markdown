@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::RuleUtil;
-$CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '0.002003';
+$CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '1.000000';
 # ABSTRACT: short-hand for constructing rule objects.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -82,7 +82,7 @@ CPAN::Changes::Markdown::Filter::RuleUtil - short-hand for constructing rule obj
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
 
 =head1 SYNOPSIS
 
