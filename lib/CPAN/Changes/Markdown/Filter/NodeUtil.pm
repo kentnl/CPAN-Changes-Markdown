@@ -6,6 +6,8 @@ package CPAN::Changes::Markdown::Filter::NodeUtil;
 $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.002003';
 # ABSTRACT: short-hand node construction functions
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

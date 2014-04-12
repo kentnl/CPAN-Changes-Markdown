@@ -6,6 +6,8 @@ package CPAN::Changes::Markdown::Filter::Node::DelimitedText;
 $CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.002003';
 # ABSTRACT: A region of text that is marked up
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

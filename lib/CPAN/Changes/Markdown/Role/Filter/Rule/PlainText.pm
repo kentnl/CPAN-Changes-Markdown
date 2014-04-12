@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
 $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.002003';
 # ABSTRACT: A rule that only filters C<plaintext> nodes.
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode;
 $CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '0.002003';
 # ABSTRACT: Quote things containing an underscore as Code
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
 

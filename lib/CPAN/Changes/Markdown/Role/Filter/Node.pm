@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Role::Filter::Node;
 $CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '0.002003';
 # ABSTRACT: A parse node of some kind
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Role::Tiny;
 
 

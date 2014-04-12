@@ -6,6 +6,8 @@ package CPAN::Changes::Markdown::Filter::RuleUtil;
 $CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '0.002003';
 # ABSTRACT: short-hand for constructing rule objects.
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

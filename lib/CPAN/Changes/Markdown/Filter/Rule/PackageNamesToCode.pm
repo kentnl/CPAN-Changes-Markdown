@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
 $CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.002003';
 # ABSTRACT: Quote things that look like Perl Package names to Code
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo;
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
 

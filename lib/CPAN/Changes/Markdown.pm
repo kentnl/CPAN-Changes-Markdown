@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown;
 $CPAN::Changes::Markdown::VERSION = '0.002003';
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo 1.000008;
 use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
 

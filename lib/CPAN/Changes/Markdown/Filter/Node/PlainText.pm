@@ -6,6 +6,8 @@ package CPAN::Changes::Markdown::Filter::Node::PlainText;
 $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.002003';
 # ABSTRACT: A text node that contains markup-free text.
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

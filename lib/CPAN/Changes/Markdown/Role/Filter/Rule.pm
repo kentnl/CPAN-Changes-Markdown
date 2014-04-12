@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Role::Filter::Rule;
 $CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.002003';
 # ABSTRACT: A step filter
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Role::Tiny;
 
 

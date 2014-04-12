@@ -5,6 +5,8 @@ package CPAN::Changes::Markdown::Role::Filter;
 $CPAN::Changes::Markdown::Role::Filter::VERSION = '0.002003';
 # ABSTRACT: A text filter of some kind
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 
