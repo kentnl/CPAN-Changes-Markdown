@@ -27,6 +27,7 @@ my %WriteMakefileArgs = (
     "Role::Tiny" => 0,
     "Sub::Exporter::Progressive" => 0,
     "strict" => 0,
+    "utf8" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
@@ -34,10 +35,9 @@ my %WriteMakefileArgs = (
     "File::Spec::Functions" => 0,
     "List::Util" => 0,
     "Test::More" => "0.89",
-    "utf8" => 0,
     "version" => 0
   },
-  "VERSION" => "1.000000",
+  "VERSION" => "0.002003",
   "test" => {
     "TESTS" => "t/*.t t/00-compile/*.t"
   }

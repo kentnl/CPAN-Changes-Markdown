@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Passthrough;
-$CPAN::Changes::Markdown::Filter::Passthrough::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::Passthrough::VERSION = '0.002003';
 # ABSTRACT: A Filter drop-in that doesn't process anything.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -56,7 +56,7 @@ CPAN::Changes::Markdown::Filter::Passthrough - A Filter drop-in that doesn't pro
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

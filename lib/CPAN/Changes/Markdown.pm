@@ -1,13 +1,15 @@
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown;
-$CPAN::Changes::Markdown::VERSION = '1.000000';
+$CPAN::Changes::Markdown::VERSION = '0.002003';
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Moo 1.000008;
+use Moo 1.000008 qw( has );
 use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
 
 
@@ -187,7 +189,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 
