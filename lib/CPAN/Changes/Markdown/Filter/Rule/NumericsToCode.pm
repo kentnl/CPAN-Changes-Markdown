@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
-$CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '0.002003';
+$CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '1.000000';
 # ABSTRACT: Quote things that look like numbers as code entries.
 
 use Moo;
@@ -71,7 +71,7 @@ CPAN::Changes::Markdown::Filter::Rule::NumericsToCode - Quote things that look l
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
 
 =head1 SYNOPSIS
 
