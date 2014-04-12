@@ -14,14 +14,12 @@
    },
    "name" : "CPAN-Changes-Markdown",
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Module::Build" : "0.4205"
-         }
-      },
       "configure" : {
+         "recommends" : {
+            "ExtUtils::MakeMaker" : "6.96"
+         },
          "requires" : {
-            "Module::Build" : "0.4205"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "develop" : {
@@ -39,6 +37,7 @@
             "Dist::Zilla::Plugin::Git::Tag" : "0",
             "Dist::Zilla::Plugin::GithubMeta" : "0",
             "Dist::Zilla::Plugin::License" : "0",
+            "Dist::Zilla::Plugin::MakeMaker" : "0",
             "Dist::Zilla::Plugin::Manifest" : "0",
             "Dist::Zilla::Plugin::ManifestSkip" : "0",
             "Dist::Zilla::Plugin::MetaConfig" : "0",
@@ -48,13 +47,11 @@
             "Dist::Zilla::Plugin::MetaTests" : "0",
             "Dist::Zilla::Plugin::MetaYAML" : "0",
             "Dist::Zilla::Plugin::MinimumPerl" : "0",
-            "Dist::Zilla::Plugin::ModuleBuild" : "0",
             "Dist::Zilla::Plugin::PkgVersion" : "0",
             "Dist::Zilla::Plugin::PodCoverageTests" : "0",
             "Dist::Zilla::Plugin::PodSyntaxTests" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
             "Dist::Zilla::Plugin::Prereqs" : "0",
-            "Dist::Zilla::Plugin::Prereqs::MatchInstalled" : "0",
             "Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled" : "0",
             "Dist::Zilla::Plugin::ReadmeAnyFromPod" : "0",
             "Dist::Zilla::Plugin::ReadmeFromPod" : "0",
@@ -95,13 +92,15 @@
       "test" : {
          "recommends" : {
             "CPAN::Meta" : "0",
-            "CPAN::Meta::Requirements" : "2.120900"
+            "CPAN::Meta::Requirements" : "2.120900",
+            "ExtUtils::MakeMaker" : "6.96",
+            "Test::More" : "1.001003"
          },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
             "File::Spec::Functions" : "0",
             "List::Util" : "0",
-            "Test::More" : "1.001003",
+            "Test::More" : "0.89",
             "utf8" : "0",
             "version" : "0"
          }
@@ -110,63 +109,63 @@
    "provides" : {
       "CPAN::Changes::Markdown" : {
          "file" : "lib/CPAN/Changes/Markdown.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Node::DelimitedText" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Node/DelimitedText.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Node::PlainText" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Node/PlainText.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::NodeUtil" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/NodeUtil.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Passthrough" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Passthrough.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Rule::NumericsToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/NumericsToCode.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/PackageNamesToCode.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/UnderscoredToCode.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::Rule::VersionsToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/VersionsToCode.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Filter::RuleUtil" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/RuleUtil.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Role::Filter" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Role::Filter::Node" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Node.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Role::Filter::Rule" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Rule.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       },
       "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Rule/PlainText.pm",
-         "version" : "v0.2.3"
+         "version" : "0.002003"
       }
    },
    "release_status" : "stable",
@@ -181,7 +180,7 @@
          "web" : "https://github.com/kentfredric/CPAN-Changes-Markdown"
       }
    },
-   "version" : "0.2.3",
+   "version" : "0.002003",
    "x_BuiltWith" : {
       "modules" : {
          "CPAN::Changes" : "0.27",
@@ -200,6 +199,7 @@
          "Dist::Zilla::Plugin::Git::Tag" : "2.021",
          "Dist::Zilla::Plugin::GithubMeta" : "0.42",
          "Dist::Zilla::Plugin::License" : "5.015",
+         "Dist::Zilla::Plugin::MakeMaker" : "5.015",
          "Dist::Zilla::Plugin::Manifest" : "5.015",
          "Dist::Zilla::Plugin::ManifestSkip" : "5.015",
          "Dist::Zilla::Plugin::MetaConfig" : "5.015",
@@ -209,13 +209,11 @@
          "Dist::Zilla::Plugin::MetaTests" : "5.015",
          "Dist::Zilla::Plugin::MetaYAML" : "5.015",
          "Dist::Zilla::Plugin::MinimumPerl" : "1.003",
-         "Dist::Zilla::Plugin::ModuleBuild" : "5.015",
          "Dist::Zilla::Plugin::PkgVersion" : "5.015",
          "Dist::Zilla::Plugin::PodCoverageTests" : "5.015",
          "Dist::Zilla::Plugin::PodSyntaxTests" : "5.015",
          "Dist::Zilla::Plugin::PodWeaver" : "4.005",
          "Dist::Zilla::Plugin::Prereqs" : "5.015",
-         "Dist::Zilla::Plugin::Prereqs::MatchInstalled" : "0.1.6",
          "Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled" : "0.001000",
          "Dist::Zilla::Plugin::ReadmeAnyFromPod" : "0.133360",
          "Dist::Zilla::Plugin::ReadmeFromPod" : "0.21",
@@ -234,7 +232,6 @@
          "ExtUtils::MakeMaker" : "6.96",
          "File::Spec::Functions" : "3.47",
          "List::Util" : "1.38",
-         "Module::Build" : "0.4205",
          "Moo" : "1.004002",
          "Path::Tiny" : "0.052",
          "Pod::Coverage::TrustPod" : "0.100003",
@@ -285,8 +282,8 @@
                   "repo_root" : "."
                },
                "Dist::Zilla::Role::Version::Sanitize" : {
-                  "mantissa" : 6,
-                  "normal_form" : "normal_3"
+                  "mantissa" : "6",
+                  "normal_form" : "numify"
                }
             },
             "name" : "@Author::KENTNL/Git::NextVersion::Sanitized",
@@ -617,13 +614,13 @@
             "version" : "1.006"
          },
          {
-            "class" : "Dist::Zilla::Plugin::ModuleBuild",
+            "class" : "Dist::Zilla::Plugin::MakeMaker",
             "config" : {
                "Dist::Zilla::Role::TestRunner" : {
                   "default_jobs" : 10
                }
             },
-            "name" : "@Author::KENTNL/ModuleBuild",
+            "name" : "@Author::KENTNL/MakeMaker",
             "version" : "5.015"
          },
          {
@@ -688,7 +685,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "0.2.3-source",
+                  "tag" : "0.002003-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -747,7 +744,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : "releases",
                   "signed" : 0,
-                  "tag" : "0.2.3",
+                  "tag" : "0.002003",
                   "tag_format" : "%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -770,25 +767,15 @@
             "version" : "0.025"
          },
          {
-            "class" : "Dist::Zilla::Plugin::Prereqs::MatchInstalled",
+            "class" : "Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled",
             "config" : {
-               "Dist::Zilla::Plugin::Prereqs::MatchInstalled" : {
-                  "applyto" : [
-                     "build.requires",
-                     "build.recommends",
-                     "build.suggests",
-                     "test.requires",
-                     "test.recommends",
-                     "test.suggests",
-                     "runtime.requires",
-                     "runtime.recommends",
-                     "runtime.suggests",
-                     "configure.requires",
-                     "configure.recommends",
-                     "configure.suggests",
-                     "develop.requires",
-                     "develop.recommends",
-                     "develop.suggests"
+               "Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled" : {
+                  "applyto_map" : [
+                     "build.requires = build.recommends",
+                     "test.requires = test.recommends",
+                     "runtime.requires = runtime.recommends",
+                     "configure.requires = configure.recommends",
+                     "develop.requires = develop.recommends"
                   ],
                   "applyto_phase" : [
                      "build",
@@ -797,19 +784,14 @@
                      "configure",
                      "develop"
                   ],
-                  "applyto_relation" : [
-                     "requires",
-                     "recommends",
-                     "suggests"
-                  ],
                   "modules" : [
-                     "Module::Build",
+                     "ExtUtils::MakeMaker",
                      "Test::More"
                   ]
                }
             },
-            "name" : "@Author::KENTNL/Prereqs::MatchInstalled",
-            "version" : "0.1.6"
+            "name" : "@Author::KENTNL/Prereqs::Recommend::MatchInstalled",
+            "version" : "0.001000"
          },
          {
             "class" : "Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled",

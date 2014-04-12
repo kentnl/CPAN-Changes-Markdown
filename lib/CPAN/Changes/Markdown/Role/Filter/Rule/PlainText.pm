@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
-$CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.2.3';
+$CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.002003';
 # ABSTRACT: A rule that only filters C<plaintext> nodes.
 
 
@@ -73,7 +73,7 @@ CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filter
 
 =head1 VERSION
 
-version 0.2.3
+version 0.002003
 
 =head1 SYNOPSIS
 

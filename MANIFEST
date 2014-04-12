@@ -2,12 +2,15 @@
 .gitignore
 .perltidyrc
 .travis.yml
-Build.PL
 Changes
+Changes.deps
+Changes.deps.all
+Changes.deps.dev
 LICENSE
 MANIFEST
 META.json
 META.yml
+Makefile.PL
 README
 dist.ini
 layout/self_structure.dot

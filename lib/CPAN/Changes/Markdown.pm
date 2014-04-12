@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown;
-$CPAN::Changes::Markdown::VERSION = '0.2.3';
+$CPAN::Changes::Markdown::VERSION = '0.002003';
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
 use Moo 1.000008;
@@ -185,7 +185,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 0.2.3
+version 0.002003
 
 =head1 SYNOPSIS
 

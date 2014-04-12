@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
-$CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.2.3';
+$CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.002003';
 # ABSTRACT: Quote things that look like Perl Package names to Code
 
 use Moo;
@@ -98,7 +98,7 @@ CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode - Quote things that lo
 
 =head1 VERSION
 
-version 0.2.3
+version 0.002003
 
 =head1 SYNOPSIS
 

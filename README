@@ -3,7 +3,7 @@ NAME
     ) in Markdown
 
 VERSION
-    version 0.2.3
+    version 0.002003
 
 SYNOPSIS
         use CPAN::Changes::Markdown;
