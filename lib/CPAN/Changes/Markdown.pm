@@ -10,7 +10,11 @@ $CPAN::Changes::Markdown::VERSION = '0.002003';
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 use Moo 1.000008 qw( has );
-use CPAN::Changes::Markdown::Filter::RuleUtil qw(:all);
+use CPAN::Changes::Markdown::Filter::RuleUtil qw(
+  rule_VersionsToCode
+  rule_UnderscoredToCode
+  rule_PackageNamesToCode
+);
 
 
 
@@ -235,9 +239,9 @@ Same as C<load> except opens C<file> in C<utf8> mode.
 
 A CPAN::Changes::Markdown::Filter object that can process a header.
 
-=head2 C<header_filter>
+=head2 C<line_filter>
 
-A CPAN::Changes::Markdown::Filter object that can process a header.
+A CPAN::Changes::Markdown::Filter object that can process a line.
 
 =begin MetaPOD::JSON v1.1.0
 

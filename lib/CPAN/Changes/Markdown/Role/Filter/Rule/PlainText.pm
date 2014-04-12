@@ -1,5 +1,7 @@
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
 $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.002003';

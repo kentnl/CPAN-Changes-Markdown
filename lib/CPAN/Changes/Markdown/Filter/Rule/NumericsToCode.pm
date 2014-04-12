@@ -1,5 +1,7 @@
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
 $CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '0.002003';

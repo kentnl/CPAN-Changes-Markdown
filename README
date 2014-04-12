@@ -41,8 +41,8 @@ ATTRIBUTES
   "header_filter"
     A CPAN::Changes::Markdown::Filter object that can process a header.
 
-  "header_filter"
-    A CPAN::Changes::Markdown::Filter object that can process a header.
+  "line_filter"
+    A CPAN::Changes::Markdown::Filter object that can process a line.
 
 AUTHOR
     Kent Fredric <kentfredric@gmail.com>

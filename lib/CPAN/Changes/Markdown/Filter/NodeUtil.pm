@@ -1,6 +1,7 @@
-
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::NodeUtil;
 $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.002003';
