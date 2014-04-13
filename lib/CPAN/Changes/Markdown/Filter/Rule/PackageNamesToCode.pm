@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
-$CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.002003';
 # ABSTRACT: Quote things that look like Perl Package names to Code
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -105,7 +105,7 @@ CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode - Quote things that lo
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

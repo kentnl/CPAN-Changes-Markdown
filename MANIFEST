@@ -12,6 +12,7 @@ META.json
 META.yml
 Makefile.PL
 README
+bin/cpan-changes-markdown
 dist.ini
 layout/self_structure.dot
 layout/self_structure.png

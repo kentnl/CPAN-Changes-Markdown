@@ -17,7 +17,9 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => "6.30"
   },
   "DISTNAME" => "CPAN-Changes-Markdown",
-  "EXE_FILES" => [],
+  "EXE_FILES" => [
+    "bin/cpan-changes-markdown"
+  ],
   "LICENSE" => "perl",
   "NAME" => "CPAN::Changes::Markdown",
   "PREREQ_PM" => {
@@ -37,7 +39,7 @@ my %WriteMakefileArgs = (
     "Test::More" => "0.89",
     "version" => 0
   },
-  "VERSION" => "1.000000",
+  "VERSION" => "0.002003",
   "test" => {
     "TESTS" => "t/*.t t/00-compile/*.t"
   }
