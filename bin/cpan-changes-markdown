@@ -45,7 +45,7 @@ cpan-changes-markdown - A simple incarnation of CPAN::Changes to Markdown
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 SYNOPSIS
 

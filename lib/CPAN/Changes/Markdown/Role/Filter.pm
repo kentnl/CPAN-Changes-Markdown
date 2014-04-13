@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter;
-$CPAN::Changes::Markdown::Role::Filter::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Role::Filter::VERSION = '0.002003';
 # ABSTRACT: A text filter of some kind
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -44,7 +44,7 @@ CPAN::Changes::Markdown::Role::Filter - A text filter of some kind
 
 =head1 VERSION
 
-version 1.000000
+version 0.002003
 
 =head1 ROLE REQUIRES
 
