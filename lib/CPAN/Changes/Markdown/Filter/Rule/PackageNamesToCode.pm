@@ -9,7 +9,7 @@ $CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '0.002003'
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Moo;
+use Moo qw( with );
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
 
 
