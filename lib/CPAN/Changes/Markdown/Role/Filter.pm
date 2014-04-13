@@ -9,8 +9,6 @@ $CPAN::Changes::Markdown::Role::Filter::VERSION = '1.000000';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-
-
 use Role::Tiny qw( requires );
 
 
