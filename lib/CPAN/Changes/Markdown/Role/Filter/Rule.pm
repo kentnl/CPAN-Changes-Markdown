@@ -9,7 +9,7 @@ $CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '0.002003';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Role::Tiny;
+use Role::Tiny qw( requires );
 
 
 

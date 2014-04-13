@@ -5,7 +5,7 @@ use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
 $CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '0.002003';
-# ABSTRACT: A rule that only filters C<plaintext> nodes.
+# ABSTRACT: A rule that only filters 'plaintext' nodes.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -24,7 +24,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Role::Tiny;
+use Role::Tiny qw( requires with );
 
 
 
@@ -73,7 +73,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filters C<plaintext> nodes.
+CPAN::Changes::Markdown::Role::Filter::Rule::PlainText - A rule that only filters 'plaintext' nodes.
 
 =head1 VERSION
 
