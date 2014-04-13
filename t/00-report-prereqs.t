@@ -109,6 +109,7 @@ my $static_prereqs = do { my $x = {
        'runtime' => {
                       'requires' => {
                                       'CPAN::Changes' => '0',
+                                      'Carp' => '0',
                                       'Moo' => '1.000008',
                                       'Path::Tiny' => '0',
                                       'Role::Tiny' => '0',

@@ -24,6 +24,7 @@ my %WriteMakefileArgs = (
   "NAME" => "CPAN::Changes::Markdown",
   "PREREQ_PM" => {
     "CPAN::Changes" => 0,
+    "Carp" => 0,
     "Moo" => "1.000008",
     "Path::Tiny" => 0,
     "Role::Tiny" => 0,
@@ -48,6 +49,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "CPAN::Changes" => 0,
+  "Carp" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec::Functions" => 0,
   "List::Util" => 0,
