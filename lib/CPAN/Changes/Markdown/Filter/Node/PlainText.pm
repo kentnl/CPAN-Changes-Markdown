@@ -33,7 +33,6 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-
 use Moo qw( with has );
 
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
@@ -120,8 +119,8 @@ Represent this node back as text.
     "does":"CPAN::Changes::Markdown::Role::Filter::Node",
     "interface":"class",
     "inherits":"Moo::Object"
-
 }
+
 
 =end MetaPOD::JSON
 

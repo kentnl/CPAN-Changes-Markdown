@@ -30,7 +30,6 @@ use Role::Tiny qw( requires );
 
 
 
-
 requires 'process';
 
 1;
@@ -60,8 +59,8 @@ version 0.002003
 {
     "namespace":"CPAN::Changes::Markdown::Role::Filter",
     "interface":"role"
-
 }
+
 
 =end MetaPOD::JSON
 
