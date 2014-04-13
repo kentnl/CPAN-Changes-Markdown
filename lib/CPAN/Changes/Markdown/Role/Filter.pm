@@ -53,6 +53,8 @@ version 0.002003
 
 =head2 C<process>
 
+  my $processed_text = $self->process( $text );
+
 =begin MetaPOD::JSON v1.1.0
 
 {

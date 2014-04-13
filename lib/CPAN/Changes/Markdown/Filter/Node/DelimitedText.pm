@@ -31,6 +31,10 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
+
+
+
+
 use Moo qw( with has );
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
@@ -110,13 +114,11 @@ version 0.002003
 
     my $delimitedtext = mk_node_delimitedtext(q[`], "The text here", q[`]);
 
+    print $delimitedtext->to_s() # `The text here`
+
+    print $delimitedtext->content # The text here
+
 =head1 METHODS
-
-=head2 C<content>
-
-=head2 C<before_text>
-
-=head2 C<after_text>
 
 =head2 C<create>
 
@@ -134,9 +136,15 @@ A short-hand for C<new>
 
 =head2 C<content>
 
+  required
+
 =head2 C<before_text>
 
+  required
+
 =head2 C<after_text>
+
+  required
 
 =begin MetaPOD::JSON v1.1.0
 

@@ -31,6 +31,9 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
+
+
+
 use Moo qw( with has );
 
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
@@ -89,9 +92,10 @@ version 0.002003
 
     my $plaintext = mk_node_plaintext("The text here");
 
-=head1 METHODS
+    $plaintext->to_s()    # The text here
+    $plaintext->content() # The text here
 
-=head2 C<content>
+=head1 METHODS
 
 =head2 C<create>
 
@@ -106,6 +110,8 @@ Represent this node back as text.
 =head1 ATTRIBUTES
 
 =head2 C<content>
+
+  rw, required
 
 =begin MetaPOD::JSON v1.1.0
 
