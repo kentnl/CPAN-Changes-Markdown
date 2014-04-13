@@ -1,5 +1,6 @@
 #!perl
 
+## no critic (Miscellanea::ProhibitUnrestrictedNoCritic)
 ## no critic
 eval 'exec echo Please execute this code with perl'    # Guard
   if 0;
@@ -11,7 +12,7 @@ use warnings;
 use utf8;
 
 package main;
-$main::VERSION = '0.002003';
+$main::VERSION = '1.000000';
 # PODNAME: cpan-changes-markdown
 
 # ABSTRACT: A simple incarnation of CPAN::Changes to Markdown
@@ -51,7 +52,7 @@ cpan-changes-markdown - A simple incarnation of CPAN::Changes to Markdown
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
 
 =head1 SYNOPSIS
 

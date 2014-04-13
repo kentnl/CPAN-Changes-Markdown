@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::NodeUtil;
-$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.002003';
+$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '1.000000';
 # ABSTRACT: short-hand node construction functions
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -64,7 +64,7 @@ CPAN::Changes::Markdown::Filter::NodeUtil - short-hand node construction functio
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
 
 =head1 SYNOPSIS
 
