@@ -166,7 +166,7 @@ stop_words = plaintext
 
 [ErrorHandling::RequireCheckingReturnValueOfEval]
 
-[ErrorHandling::RequireUseOfExceptions]
+[-ErrorHandling::RequireUseOfExceptions]
 
 [InputOutput::ProhibitBacktickOperators]
 
