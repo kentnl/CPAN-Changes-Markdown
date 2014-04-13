@@ -19,7 +19,7 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
-    plaintext
+    plaintext cpan
     )
 );
 for my $wordlist (@stopwords) {
