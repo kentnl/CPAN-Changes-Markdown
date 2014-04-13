@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter::Node;
-$CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '0.002003';
+$CPAN::Changes::Markdown::Role::Filter::Node::VERSION = '1.000000';
 # ABSTRACT: A parse node of some kind
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -42,7 +42,7 @@ CPAN::Changes::Markdown::Role::Filter::Node - A parse node of some kind
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
 
 =head1 ROLE REQUIRES
 
