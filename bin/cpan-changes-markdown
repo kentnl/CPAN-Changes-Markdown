@@ -11,11 +11,20 @@ use utf8;
 # PODNAME: cpan-changes-markdown
 
 # ABSTRACT: A simple incarnation of CPAN::Changes to Markdown
+
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 my ($filename) = @ARGV;
 
 if ( not $filename ) {
   die "$0 Changes > Changes.mkdn";
 }
+
+
+
+
+
+
 
 use CPAN::Changes::Markdown;
 my $changes = CPAN::Changes::Markdown->load_utf8( $filename );
@@ -36,7 +45,11 @@ cpan-changes-markdown - A simple incarnation of CPAN::Changes to Markdown
 
 =head1 VERSION
 
-version 0.002003
+version 1.000000
+
+=head1 SYNOPSIS
+
+  cpan-changes-markdown Changes > Changes.mkdn
 
 =head1 AUTHOR
 
