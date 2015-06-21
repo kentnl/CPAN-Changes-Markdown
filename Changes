@@ -1,11 +1,12 @@
 Release history for CPAN-Changes-Markdown
 
-1.000001 2015-06-21T23:50:33Z be0c26a
+1.000001 2015-06-21T23:56:03Z 6f73bbf
  [Dependencies::Stats]
  - Dependencies changed since 1.000000, see misc/*.deps* for details
  - configure: +1 ↓1 (recommends: ↑1)
- - develop: +2 ↑1 (recommends: +1)
- - test: +2 -3 (recommends: ↑3 -1)
+ - develop: +14 ↑3 -6 (recommends: +1, suggests: +2 -1)
+ - runtime: (recommends: +1)
+ - test: +2 -3 (recommends: ↑2 ↓1 -1)
 
 1.000000 2014-04-13T02:01:38Z
  [00 Major]
