@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode;
-$CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '1.000000';
+$CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '1.000001';
 # ABSTRACT: Quote things containing an underscore as Code
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -84,7 +84,7 @@ CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode - Quote things containi
 
 =head1 VERSION
 
-version 1.000000
+version 1.000001
 
 =head1 SYNOPSIS
 
