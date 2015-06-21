@@ -35,7 +35,7 @@ misc/Changes.deps.all
 misc/Changes.deps.dev
 misc/Changes.deps.opt
 misc/built_with.json
-perlcritic.deps
+misc/perlcritic.deps
 perlcritic.rc
 t/00-compile/lib_CPAN_Changes_Markdown_Filter_NodeUtil_pm.t
 t/00-compile/lib_CPAN_Changes_Markdown_Filter_Node_DelimitedText_pm.t
