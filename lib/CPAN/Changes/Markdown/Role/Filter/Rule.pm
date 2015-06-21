@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule;
-$CPAN::Changes::Markdown::Role::Filter::Rule::VERSION = '1.000001';
+
 # ABSTRACT: A step filter
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

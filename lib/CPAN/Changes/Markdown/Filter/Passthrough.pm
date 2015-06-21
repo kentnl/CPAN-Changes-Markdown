@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Passthrough;
-$CPAN::Changes::Markdown::Filter::Passthrough::VERSION = '1.000001';
+
 # ABSTRACT: A Filter drop-in that doesn't process anything.
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

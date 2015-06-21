@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::NodeUtil;
-$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '1.000001';
+
 # ABSTRACT: short-hand node construction functions
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter::Rule::PlainText;
-$CPAN::Changes::Markdown::Role::Filter::Rule::PlainText::VERSION = '1.000001';
+
 # ABSTRACT: A rule that only filters 'plaintext' nodes.
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

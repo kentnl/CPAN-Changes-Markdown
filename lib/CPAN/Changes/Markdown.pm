@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown;
-$CPAN::Changes::Markdown::VERSION = '1.000001';
+
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

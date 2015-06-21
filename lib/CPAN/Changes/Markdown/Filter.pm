@@ -4,10 +4,13 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter;
-$CPAN::Changes::Markdown::Filter::VERSION = '1.000001';
+
 # ABSTRACT: a simple plug-in based, staged text filter for Markdown translation
 
+our $VERSION = '1.000001';
+
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

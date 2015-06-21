@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
-$CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode::VERSION = '1.000001';
+
 # ABSTRACT: Quote things that look like Perl Package names to Code
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

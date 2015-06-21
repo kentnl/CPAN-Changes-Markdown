@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Role::Filter;
-$CPAN::Changes::Markdown::Role::Filter::VERSION = '1.000001';
+
 # ABSTRACT: A text filter of some kind
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

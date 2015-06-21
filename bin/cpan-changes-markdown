@@ -12,7 +12,7 @@ use utf8;
 
 ## no critic (NamingConventions::Capitalization)
 package main;
-$main::VERSION = '1.000001';
+
 # PODNAME: cpan-changes-markdown
 
 # ABSTRACT: A simple incarnation of CPAN::Changes to Markdown

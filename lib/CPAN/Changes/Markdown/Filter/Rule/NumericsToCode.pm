@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
-$CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '1.000001';
+
 # ABSTRACT: Quote things that look like numbers as code entries.
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

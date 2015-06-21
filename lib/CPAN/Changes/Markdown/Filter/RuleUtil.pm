@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::RuleUtil;
-$CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '1.000001';
+
 # ABSTRACT: short-hand for constructing rule objects.
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

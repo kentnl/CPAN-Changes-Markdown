@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Node::PlainText;
-$CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '1.000001';
+
 # ABSTRACT: A text node that contains markup-free text.
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 

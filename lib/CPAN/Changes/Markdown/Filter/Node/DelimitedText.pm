@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 
 package CPAN::Changes::Markdown::Filter::Node::DelimitedText;
-$CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '1.000001';
+
 # ABSTRACT: A region of text that is marked up
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
