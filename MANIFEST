@@ -3,9 +3,6 @@
 .perltidyrc
 .travis.yml
 Changes
-Changes.deps
-Changes.deps.all
-Changes.deps.dev
 LICENSE
 MANIFEST
 META.json
@@ -13,6 +10,7 @@ META.yml
 Makefile.PL
 bin/cpan-changes-markdown
 dist.ini
+dist.ini.meta
 layout/self_structure.dot
 layout/self_structure.png
 lib/CPAN/Changes/Markdown.pm
@@ -49,6 +47,10 @@ maint-travis-ci/yamls/sterile.mkdn
 maint-travis-ci/yamls/sterile.yaml
 maint-travis-ci/yamls/sterile2.yaml
 maint/perlcritic.rc.gen.pl
+misc/Changes.deps
+misc/Changes.deps.all
+misc/Changes.deps.dev
+misc/Changes.deps.opt
 perlcritic.deps
 perlcritic.rc
 t/00-compile/lib_CPAN_Changes_Markdown_Filter_NodeUtil_pm.t

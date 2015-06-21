@@ -280,7 +280,7 @@
                "Dist::Zilla::Plugin::Git::NextVersion" : {
                   "first_version" : "0.001000",
                   "version_by_branch" : "0",
-                  "version_regexp" : "(?^:^(.*)-source$)"
+                  "version_regexp" : "(?^u:^(.*)-source$)"
                },
                "Dist::Zilla::Role::Git::Repo" : {
                   "repo_root" : "."
@@ -646,7 +646,7 @@
             "class" : "Dist::Zilla::Plugin::MakeMaker",
             "config" : {
                "Dist::Zilla::Role::TestRunner" : {
-                  "default_jobs" : 10
+                  "default_jobs" : "10"
                }
             },
             "name" : "@Author::KENTNL/MakeMaker",
@@ -671,7 +671,7 @@
             "class" : "Dist::Zilla::Plugin::RunExtraTests",
             "config" : {
                "Dist::Zilla::Role::TestRunner" : {
-                  "default_jobs" : 10
+                  "default_jobs" : "10"
                }
             },
             "name" : "@Author::KENTNL/RunExtraTests",
