@@ -1,31 +1,67 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::Node::PlainText;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Node::PlainText::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Node::PlainText::VERSION = '1.000000';
 # ABSTRACT: A text node that contains markup-free text.
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
-use Moo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use Moo qw( with has );
 
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
+
+
+
+
+
 has content => ( is => rw =>, required => 1 );
+
+
+
+
+
+
+
 
 
 sub create {
   my ( $self, $content ) = @_;
   return $self->new( content => $content );
 }
+
+
+
+
+
 
 
 sub to_s {
@@ -39,7 +75,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -47,7 +83,7 @@ CPAN::Changes::Markdown::Filter::Node::PlainText - A text node that contains mar
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -55,9 +91,10 @@ version 0.2.2
 
     my $plaintext = mk_node_plaintext("The text here");
 
-=head1 METHODS
+    $plaintext->to_s()    # The text here
+    $plaintext->content() # The text here
 
-=head2 C<content>
+=head1 METHODS
 
 =head2 C<create>
 
@@ -73,6 +110,8 @@ Represent this node back as text.
 
 =head2 C<content>
 
+  rw, required
+
 =begin MetaPOD::JSON v1.1.0
 
 {
@@ -80,8 +119,8 @@ Represent this node back as text.
     "does":"CPAN::Changes::Markdown::Role::Filter::Node",
     "interface":"class",
     "inherits":"Moo::Object"
-
 }
+
 
 =end MetaPOD::JSON
 
@@ -91,7 +130,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -1,18 +1,35 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Rule::NumericsToCode::VERSION = '1.000000';
 # ABSTRACT: Quote things that look like numbers as code entries.
 
-use Moo;
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+use Moo qw( with has );
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -26,8 +43,14 @@ sub _inject_code_delim {
   return @{$out};
 }
 
+# _Pulp__5010_qr_m_propagate_properly
+## no critic (Compatibility::PerlMinimumVersionAndWhy)
 my $re_contains_number = qr/         \d                  /msx;
 my $re_numeric         = qr/ (\A|\A.*?\s) ( [\d._]+ ) (\z|\s.*\z)/msx;
+## use critic
+
+
+
 
 
 sub filter_plaintext {
@@ -47,7 +70,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -55,7 +78,7 @@ CPAN::Changes::Markdown::Filter::Rule::NumericsToCode - Quote things that look l
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -85,7 +108,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

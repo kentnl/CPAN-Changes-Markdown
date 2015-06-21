@@ -1,30 +1,76 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::Node::DelimitedText;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Node::DelimitedText::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Node::DelimitedText::VERSION = '1.000000';
 # ABSTRACT: A region of text that is marked up
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
-use Moo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use Moo qw( with has );
 with 'CPAN::Changes::Markdown::Role::Filter::Node';
 
 
-has content => ( is => ro =>, required => 1 );
 
 
-has before_text => ( is => ro =>, required => 1 );
 
 
-has after_text => ( is => ro =>, required => 1 );
+
+has content => ( is => ro =>, required => 1, );
+
+
+
+
+
+
+
+has before_text => ( is => ro =>, required => 1, );
+
+
+
+
+
+
+
+has after_text => ( is => ro =>, required => 1, );
+
+
+
+
+
+
+
+
+
+
+
 
 
 sub create {
@@ -32,9 +78,12 @@ sub create {
   return $self->new(
     content     => $content,
     before_text => $before,
-    after_text  => $after
+    after_text  => $after,
   );
 }
+
+
+
 
 
 sub to_s {
@@ -48,7 +97,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -56,7 +105,7 @@ CPAN::Changes::Markdown::Filter::Node::DelimitedText - A region of text that is 
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -64,13 +113,11 @@ version 0.2.2
 
     my $delimitedtext = mk_node_delimitedtext(q[`], "The text here", q[`]);
 
+    print $delimitedtext->to_s() # `The text here`
+
+    print $delimitedtext->content # The text here
+
 =head1 METHODS
-
-=head2 C<content>
-
-=head2 C<before_text>
-
-=head2 C<after_text>
 
 =head2 C<create>
 
@@ -88,9 +135,15 @@ A short-hand for C<new>
 
 =head2 C<content>
 
+  required
+
 =head2 C<before_text>
 
+  required
+
 =head2 C<after_text>
+
+  required
 
 =begin MetaPOD::JSON v1.1.0
 
@@ -99,8 +152,8 @@ A short-hand for C<new>
     "does":"CPAN::Changes::Markdown::Role::Filter::Node",
     "interface":"class",
     "inherits":"Moo::Object"
-
 }
+
 
 =end MetaPOD::JSON
 
@@ -110,7 +163,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

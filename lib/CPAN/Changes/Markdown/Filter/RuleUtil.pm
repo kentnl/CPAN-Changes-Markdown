@@ -1,16 +1,30 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::RuleUtil;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::RuleUtil::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::RuleUtil::VERSION = '1.000000';
 # ABSTRACT: short-hand for constructing rule objects.
+
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -18,12 +32,18 @@ use Sub::Exporter::Progressive -setup =>
   { exports => [qw( rule_NumericsToCode rule_UnderscoredToCode rule_PackageNamesToCode rule_VersionsToCode )] };
 
 
-## no critic ( RequireArgUnpacking Capitalization )
+
+
+
+## no critic ( RequireArgUnpacking Capitalization NamingConventions::ProhibitMixedCaseSub )
 
 sub rule_NumericsToCode {
   require CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
   return CPAN::Changes::Markdown::Filter::Rule::NumericsToCode->new(@_);
 }
+
+
+
 
 
 sub rule_UnderscoredToCode {
@@ -32,10 +52,16 @@ sub rule_UnderscoredToCode {
 }
 
 
+
+
+
 sub rule_PackageNamesToCode {
   require CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
   return CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode->new(@_);
 }
+
+
+
 
 
 sub rule_VersionsToCode {
@@ -49,7 +75,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -57,7 +83,7 @@ CPAN::Changes::Markdown::Filter::RuleUtil - short-hand for constructing rule obj
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -91,7 +117,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

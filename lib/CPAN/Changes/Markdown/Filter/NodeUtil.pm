@@ -1,20 +1,37 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::NodeUtil;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::NodeUtil::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::NodeUtil::VERSION = '1.000000';
 # ABSTRACT: short-hand node construction functions
+
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 use Sub::Exporter::Progressive -setup => { exports => [qw( mk_node_plaintext mk_node_delimitedtext )] };
+
+
+
 
 
 ## no critic ( RequireArgUnpacking )
@@ -23,6 +40,9 @@ sub mk_node_plaintext {
   require CPAN::Changes::Markdown::Filter::Node::PlainText;
   return CPAN::Changes::Markdown::Filter::Node::PlainText->create(@_);
 }
+
+
+
 
 
 sub mk_node_delimitedtext {
@@ -36,7 +56,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -44,7 +64,7 @@ CPAN::Changes::Markdown::Filter::NodeUtil - short-hand node construction functio
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -74,7 +94,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

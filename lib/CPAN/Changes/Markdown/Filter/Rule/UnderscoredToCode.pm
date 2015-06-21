@@ -1,26 +1,48 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode;
-BEGIN {
-  $CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '0.2.2';
-}
-
+$CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode::VERSION = '1.000000';
 # ABSTRACT: Quote things containing an underscore as Code
 
-use Moo;
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+use Moo qw( with );
 use CPAN::Changes::Markdown::Filter::NodeUtil qw( mk_node_plaintext mk_node_delimitedtext );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 with 'CPAN::Changes::Markdown::Role::Filter::Rule::PlainText';
 
+# _Pulp__5010_qr_m_propagate_properly
+## no critic (Compatibility::PerlMinimumVersionAndWhy)
 my $re_prefix = qr/(\A|\A.*?\s) ( _+ [^_\s]+         (?: _+ [^_\s]+ )*   ) (\z|\s.*\z)/msx;
 my $re_suffix = qr/(\A|\A.*?\s) ( [^_\s]+ _+         (?: [^_\s]+ _+ )*   ) (\z|\s.*\z)/msx;
 my $re_infix  = qr/(\A|\A.*?\s) ( [^_\s]+ _+ [^_\s]+ (?: _+ [^_\s]+ )*   ) (\z|\s.*\z)/msx;
+## use critic
 
 sub _inject_code_delim {
   my ( $self, $out, $before, $code, $after ) = @_;
@@ -29,6 +51,9 @@ sub _inject_code_delim {
   push @{$out}, $self->filter_plaintext( mk_node_plaintext($after) );
   return @{$out};
 }
+
+
+
 
 
 sub filter_plaintext {
@@ -51,7 +76,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -59,7 +84,7 @@ CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode - Quote things containi
 
 =head1 VERSION
 
-version 0.2.2
+version 1.000000
 
 =head1 SYNOPSIS
 
@@ -91,7 +116,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
