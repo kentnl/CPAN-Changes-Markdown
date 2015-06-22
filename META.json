@@ -117,8 +117,8 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
             "Test::More" : "0.89",
-            "perl" : "5.008",
-            "utf8" : "0"
+            "charnames" : "0",
+            "perl" : "5.008"
          }
       }
    },
