@@ -36,7 +36,7 @@ if ( not $filename ) {
 
 
 use CPAN::Changes::Markdown;
-my $changes = CPAN::Changes::Markdown->load_utf8( $filename );
+my $changes = CPAN::Changes::Markdown->load_utf8($filename);
 binmode *STDOUT, ':encoding(UTF-8)';
 print $changes->serialize or croak q[Can't write to STDOUT];
 
