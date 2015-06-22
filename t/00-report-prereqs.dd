@@ -89,7 +89,6 @@ do { my $x = {
                                       'Sub::Exporter::Progressive' => '0',
                                       'perl' => '5.008',
                                       'strict' => '0',
-                                      'utf8' => '0',
                                       'warnings' => '0'
                                     }
                     },
@@ -103,7 +102,8 @@ do { my $x = {
                                    'ExtUtils::MakeMaker' => '0',
                                    'File::Spec' => '0',
                                    'Test::More' => '0.89',
-                                   'perl' => '5.008'
+                                   'perl' => '5.008',
+                                   'utf8' => '0'
                                  }
                  }
      };
