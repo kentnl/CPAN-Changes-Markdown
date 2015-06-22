@@ -13,8 +13,6 @@ README
 bin/cpan-changes-markdown
 dist.ini
 dist.ini.meta
-layout/self_structure.dot
-layout/self_structure.png
 lib/CPAN/Changes/Markdown.pm
 lib/CPAN/Changes/Markdown/Filter.pm
 lib/CPAN/Changes/Markdown/Filter/Node/DelimitedText.pm
