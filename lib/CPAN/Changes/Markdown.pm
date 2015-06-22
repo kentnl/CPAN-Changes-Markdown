@@ -1,11 +1,12 @@
-use 5.008;    # utf8
+use 5.006;    # our
 use strict;
 use warnings;
-use utf8;
 
 package CPAN::Changes::Markdown;
-$CPAN::Changes::Markdown::VERSION = '1.000000';
+
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -193,7 +194,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 1.000000
+version 1.000001
 
 =head1 SYNOPSIS
 
@@ -256,11 +257,11 @@ A CPAN::Changes::Markdown::Filter object that can process a line.
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2015 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

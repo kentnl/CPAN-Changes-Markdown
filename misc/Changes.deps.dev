@@ -1,4 +1,47 @@
-1.000000
+This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and OPTIONAL )
+
+1.000001
+ [Added / develop recommends]
+ - Test::More 0.99
+
+ [Added / develop requires]
+ - Dist::Zilla 5
+ - Dist::Zilla::Plugin::Author::KENTNL::RecommendFixes 0.004002
+ - Dist::Zilla::Plugin::Author::KENTNL::TravisCI 0.001002
+ - Dist::Zilla::Plugin::BumpVersionAfterRelease
+ - Dist::Zilla::Plugin::CopyFilesFromBuild
+ - Dist::Zilla::Plugin::ExecDir
+ - Dist::Zilla::Plugin::Git::Contributors 0.006
+ - Dist::Zilla::Plugin::MetaYAML::Minimal
+ - Dist::Zilla::Plugin::Prereqs::AuthorDeps
+ - Dist::Zilla::Plugin::Prereqs::Upgrade
+ - Dist::Zilla::Plugin::Readme::Brief
+ - Dist::Zilla::Plugin::RewriteVersion::Sanitized
+ - Dist::Zilla::Plugin::Test::EOL
+ - Test::EOL
+ - Test::More 0.88
+
+ [Added / develop suggests]
+ - Dist::Zilla::App::Command::bakeini 0.002005
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.024002
+
+ [Changed / develop requires]
+ - Dist::Zilla::Plugin::Git::NextRelease 0 → 0.004000
+ - Dist::Zilla::Plugin::MetaData::BuiltWith 0 → 1.004000
+ - Test::Kwalitee 1.12 → 1.21
+
+ [Removed / develop requires]
+ - Dist::Zilla::Plugin::EOLTests
+ - Dist::Zilla::Plugin::Git::NextVersion::Sanitized
+ - Dist::Zilla::Plugin::MetaYAML
+ - Dist::Zilla::Plugin::PkgVersion
+ - Dist::Zilla::Plugin::ReadmeFromPod
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.013003
+
+ [Removed / develop suggests]
+ - Dist::Zilla::PluginBundle::Author::KENTNL::Lite v1.3.0
+
+1.000000 2014-04-13T02:01:38Z
  [Added / develop requires]
  - Dist::Zilla::Plugin::Authority 1.006
  - Dist::Zilla::Plugin::AutoPrereqs
@@ -41,7 +84,7 @@
  - Dist::Zilla::Plugin::TestRelease
  - Dist::Zilla::Plugin::Twitter
  - Dist::Zilla::Plugin::UploadToCPAN
- - Dist::Zilla::PluginBundle::Author::KENTNL 2.013002
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.013003
 
  [Added / develop suggests]
  - Dist::Zilla::PluginBundle::Author::KENTNL::Lite v1.3.0
@@ -71,4 +114,3 @@
 
  [Changed / develop suggests]
  - Dist::Zilla::PluginBundle::Author::KENTNL v1.8.0 → v1.8.1
-

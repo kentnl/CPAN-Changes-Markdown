@@ -1,56 +1,34 @@
-NAME
-    CPAN::Changes::Markdown - Format your Changes file ( or a section of it
-    ) in Markdown
+CPAN::Changes::Markdown
 
-VERSION
-    version 1.000000
+Mostly, this is wrapper around CPAN::Changes that just formats the
+output differently.
 
-SYNOPSIS
-        use CPAN::Changes::Markdown;
+Primary use case for me is writing "GitHub" release notes.
 
-        my $changes = CPAN::Changes::Markdown->load_utf8( $path_to_changes_file );
+I plan to eventually have hook filters and stuff to highlight various
+tokens in a "GitHub" friendly way.
 
-        print $changes->serialize # emits Markdown
+INSTALLATION
 
-DESCRIPTION
-    Mostly, this is wrapper around CPAN::Changes that just formats the
-    output differently.
+This is a Perl module distribution. It should be installed with whichever
+tool you use to manage your installation of Perl, e.g. any of
 
-    Primary use case for me is writing "GitHub" release notes.
+  cpanm .
+  cpan  .
+  cpanp -i .
 
-    I plan to eventually have hook filters and stuff to highlight various
-    tokens in a "GitHub" friendly way.
+Consult http://www.cpan.org/modules/INSTALL.html for further instruction.
+Should you wish to install this module manually, the procedure is
 
-METHODS
-  "load"
-        my $ccm = CPAN::Changes::Markdown->load( path/to/file );
-
-  "load_string"
-        my $ccm = CPAN::Changes::Markdown->load_string( "some text" );
-
-  "load_utf8"
-    Same as "load" except opens "file" in "utf8" mode.
-
-        my $ccm = CPAN::Changes::Markdown->load_utf8( path/to/file  );
-
-  "serialize"
-        my $string = $ccm->serialize();
-
-ATTRIBUTES
-  "changes"
-  "header_filter"
-    A CPAN::Changes::Markdown::Filter object that can process a header.
-
-  "line_filter"
-    A CPAN::Changes::Markdown::Filter object that can process a line.
-
-AUTHOR
-    Kent Fredric <kentfredric@gmail.com>
+  perl Makefile.PL
+  make
+  make test
+  make install
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by Kent Fredric
-    <kentfredric@gmail.com>.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+This software is copyright (c) 2015 by Kent Fredric
+<kentfredric@gmail.com>.
 
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

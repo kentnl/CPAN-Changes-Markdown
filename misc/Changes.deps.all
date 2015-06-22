@@ -1,4 +1,83 @@
-1.000000
+This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL dependencies for all phases (configure/build/runtime/test/develop)
+
+1.000001
+ [Added / configure requires]
+ - perl 5.006
+
+ [Added / develop recommends]
+ - Test::More 0.99
+
+ [Added / develop requires]
+ - Dist::Zilla 5
+ - Dist::Zilla::Plugin::Author::KENTNL::RecommendFixes 0.004002
+ - Dist::Zilla::Plugin::Author::KENTNL::TravisCI 0.001002
+ - Dist::Zilla::Plugin::BumpVersionAfterRelease
+ - Dist::Zilla::Plugin::CopyFilesFromBuild
+ - Dist::Zilla::Plugin::ExecDir
+ - Dist::Zilla::Plugin::Git::Contributors 0.006
+ - Dist::Zilla::Plugin::MetaYAML::Minimal
+ - Dist::Zilla::Plugin::Prereqs::AuthorDeps
+ - Dist::Zilla::Plugin::Prereqs::Upgrade
+ - Dist::Zilla::Plugin::Readme::Brief
+ - Dist::Zilla::Plugin::RewriteVersion::Sanitized
+ - Dist::Zilla::Plugin::Test::EOL
+ - Test::EOL
+ - Test::More 0.88
+
+ [Added / develop suggests]
+ - Dist::Zilla::App::Command::bakeini 0.002005
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.024002
+
+ [Added / runtime recommends]
+ - Path::Tiny 0.058
+
+ [Added / test requires]
+ - File::Spec
+ - charnames
+ - perl 5.006
+
+ [Changed / configure recommends]
+ - ExtUtils::MakeMaker 6.96 → 7.00
+
+ [Changed / configure requires]
+ - ExtUtils::MakeMaker 6.30 → 0
+
+ [Changed / develop requires]
+ - Dist::Zilla::Plugin::Git::NextRelease 0 → 0.004000
+ - Dist::Zilla::Plugin::MetaData::BuiltWith 0 → 1.004000
+ - Test::Kwalitee 1.12 → 1.21
+
+ [Changed / runtime requires]
+ - perl 5.008 → 5.006
+
+ [Changed / test recommends]
+ - CPAN::Meta 0 → 2.120900
+ - ExtUtils::MakeMaker 6.96 → 7.00
+ - Test::More 1.001003 → 0.99
+
+ [Removed / develop requires]
+ - Dist::Zilla::Plugin::EOLTests
+ - Dist::Zilla::Plugin::Git::NextVersion::Sanitized
+ - Dist::Zilla::Plugin::MetaYAML
+ - Dist::Zilla::Plugin::PkgVersion
+ - Dist::Zilla::Plugin::ReadmeFromPod
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.013003
+
+ [Removed / develop suggests]
+ - Dist::Zilla::PluginBundle::Author::KENTNL::Lite v1.3.0
+
+ [Removed / runtime requires]
+ - utf8
+
+ [Removed / test recommends]
+ - CPAN::Meta::Requirements 2.120900
+
+ [Removed / test requires]
+ - File::Spec::Functions
+ - List::Util
+ - version
+
+1.000000 2014-04-13T02:01:38Z
  [Added / configure recommends]
  - ExtUtils::MakeMaker 6.96
 
@@ -47,12 +126,13 @@
  - Dist::Zilla::Plugin::TestRelease
  - Dist::Zilla::Plugin::Twitter
  - Dist::Zilla::Plugin::UploadToCPAN
- - Dist::Zilla::PluginBundle::Author::KENTNL 2.013002
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.013003
 
  [Added / develop suggests]
  - Dist::Zilla::PluginBundle::Author::KENTNL::Lite v1.3.0
 
  [Added / runtime requires]
+ - Carp
  - utf8
 
  [Added / test recommends]
@@ -128,4 +208,3 @@
 
  [Changed / develop suggests]
  - Dist::Zilla::PluginBundle::Author::KENTNL v1.8.0 → v1.8.1
-

@@ -5,17 +5,18 @@ eval 'exec echo Please execute this code with perl'    # Guard
   if 0;
 ## use critic
 
-use 5.008;                                             # utf8;
+use 5.006;                                             # our
 use strict;
 use warnings;
-use utf8;
 
 ## no critic (NamingConventions::Capitalization)
 package main;
-$main::VERSION = '1.000000';
+
 # PODNAME: cpan-changes-markdown
 
 # ABSTRACT: A simple incarnation of CPAN::Changes to Markdown
+
+our $VERSION = '1.000001';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -34,9 +35,10 @@ if ( not $filename ) {
 
 
 use CPAN::Changes::Markdown;
-my $changes = CPAN::Changes::Markdown->load_utf8( $filename );
-binmode *STDOUT, ':encoding(UTF-8)';
-print $changes->serialize or croak q[Can't write to STDOUT];
+my $changes = CPAN::Changes::Markdown->load_utf8($filename);
+my $output  = $changes->serialize;
+utf8::encode($output);    ## no critic
+print $output or croak q[Can't write to STDOUT];
 
 exit 0;
 
@@ -52,7 +54,7 @@ cpan-changes-markdown - A simple incarnation of CPAN::Changes to Markdown
 
 =head1 VERSION
 
-version 1.000000
+version 1.000001
 
 =head1 SYNOPSIS
 
@@ -60,11 +62,11 @@ version 1.000000
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2015 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
