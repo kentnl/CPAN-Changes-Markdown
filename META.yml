@@ -7,10 +7,10 @@ build_requires:
   File::Spec: '0'
   Test::More: '0.89'
   charnames: '0'
-  perl: '5.008'
+  perl: '5.006'
 configure_requires:
   ExtUtils::MakeMaker: '0'
-  perl: '5.008'
+  perl: '5.006'
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.037, CPAN::Meta::Converter version 2.150005'
 license: perl
@@ -73,7 +73,7 @@ requires:
   Path::Tiny: '0'
   Role::Tiny: '0'
   Sub::Exporter::Progressive: '0'
-  perl: '5.008'
+  perl: '5.006'
   strict: '0'
   warnings: '0'
 resources:
