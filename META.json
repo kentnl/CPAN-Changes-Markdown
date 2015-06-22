@@ -125,63 +125,63 @@
    "provides" : {
       "CPAN::Changes::Markdown" : {
          "file" : "lib/CPAN/Changes/Markdown.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Node::DelimitedText" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Node/DelimitedText.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Node::PlainText" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Node/PlainText.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::NodeUtil" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/NodeUtil.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Passthrough" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Passthrough.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Rule::NumericsToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/NumericsToCode.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/PackageNamesToCode.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Rule::UnderscoredToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/UnderscoredToCode.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::Rule::VersionsToCode" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/Rule/VersionsToCode.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Filter::RuleUtil" : {
          "file" : "lib/CPAN/Changes/Markdown/Filter/RuleUtil.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Role::Filter" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Role::Filter::Node" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Node.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Role::Filter::Rule" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Rule.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       },
       "CPAN::Changes::Markdown::Role::Filter::Rule::PlainText" : {
          "file" : "lib/CPAN/Changes/Markdown/Role/Filter/Rule/PlainText.pm",
-         "version" : "1.000001"
+         "version" : "1.000002"
       }
    },
    "release_status" : "stable",
@@ -196,7 +196,7 @@
          "web" : "https://github.com/kentnl/CPAN-Changes-Markdown"
       }
    },
-   "version" : "1.000001",
+   "version" : "1.000002",
    "x_BuiltWith" : {
       "external_file" : "misc/built_with.json"
    },
@@ -683,7 +683,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "1.000001-source",
+                  "tag" : "1.000002-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -754,7 +754,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : "releases",
                   "signed" : 0,
-                  "tag" : "1.000001",
+                  "tag" : "1.000002",
                   "tag_format" : "%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"

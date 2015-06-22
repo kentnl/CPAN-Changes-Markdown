@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Filter::Node::DelimitedText;
 
 # ABSTRACT: A region of text that is marked up
 
-our $VERSION = '1.000001';
+our $VERSION = '1.000002';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -106,7 +106,7 @@ CPAN::Changes::Markdown::Filter::Node::DelimitedText - A region of text that is 
 
 =head1 VERSION
 
-version 1.000001
+version 1.000002
 
 =head1 SYNOPSIS
 

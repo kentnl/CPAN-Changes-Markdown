@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown;
 
 # ABSTRACT: Format your Changes file ( or a section of it ) in Markdown
 
-our $VERSION = '1.000001';
+our $VERSION = '1.000002';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -194,7 +194,7 @@ CPAN::Changes::Markdown - Format your Changes file ( or a section of it ) in Mar
 
 =head1 VERSION
 
-version 1.000001
+version 1.000002
 
 =head1 SYNOPSIS
 

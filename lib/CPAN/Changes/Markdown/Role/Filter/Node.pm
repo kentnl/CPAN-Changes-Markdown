@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Role::Filter::Node;
 
 # ABSTRACT: A parse node of some kind
 
-our $VERSION = '1.000001';
+our $VERSION = '1.000002';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -43,7 +43,7 @@ CPAN::Changes::Markdown::Role::Filter::Node - A parse node of some kind
 
 =head1 VERSION
 
-version 1.000001
+version 1.000002
 
 =head1 ROLE REQUIRES
 
