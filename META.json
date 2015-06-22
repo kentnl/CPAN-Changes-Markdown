@@ -1,7 +1,7 @@
 {
    "abstract" : "Format your Changes file ( or a section of it ) in Markdown",
    "author" : [
-      "Kent Fredric <kentfredric@gmail.com>"
+      "Kent Fredric <kentnl@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Zilla version 5.037, CPAN::Meta::Converter version 2.150005",
@@ -35,6 +35,7 @@
             "Dist::Zilla::Plugin::AutoPrereqs" : "0",
             "Dist::Zilla::Plugin::BumpVersionAfterRelease" : "0",
             "Dist::Zilla::Plugin::ConfirmRelease" : "0",
+            "Dist::Zilla::Plugin::CopyFilesFromBuild" : "0",
             "Dist::Zilla::Plugin::ExecDir" : "0",
             "Dist::Zilla::Plugin::Git::Check" : "0",
             "Dist::Zilla::Plugin::Git::Commit" : "0",
@@ -186,13 +187,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/kentfredric/CPAN-Changes-Markdown/issues"
+         "web" : "https://github.com/kentnl/CPAN-Changes-Markdown/issues"
       },
-      "homepage" : "https://github.com/kentfredric/CPAN-Changes-Markdown",
+      "homepage" : "https://github.com/kentnl/CPAN-Changes-Markdown",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/kentfredric/CPAN-Changes-Markdown.git",
-         "web" : "https://github.com/kentfredric/CPAN-Changes-Markdown"
+         "url" : "https://github.com/kentnl/CPAN-Changes-Markdown.git",
+         "web" : "https://github.com/kentnl/CPAN-Changes-Markdown"
       }
    },
    "version" : "1.000001",
@@ -279,7 +280,8 @@
                   "exclude_filename" : [
                      "README",
                      "README.mkdn",
-                     "README.pod"
+                     "README.pod",
+                     "LICENSE"
                   ],
                   "exclude_match" : [],
                   "follow_symlinks" : "0",
@@ -325,6 +327,11 @@
             "class" : "Dist::Zilla::Plugin::Author::KENTNL::TravisCI",
             "name" : "@Author::KENTNL/Author::KENTNL::TravisCI",
             "version" : "0.001002"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CopyFilesFromBuild",
+            "name" : "@Author::KENTNL/CopyXBuild",
+            "version" : "0.151680"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaTests",

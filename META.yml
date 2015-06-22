@@ -1,7 +1,7 @@
 ---
 abstract: 'Format your Changes file ( or a section of it ) in Markdown'
 author:
-  - 'Kent Fredric <kentfredric@gmail.com>'
+  - 'Kent Fredric <kentnl@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: '0'
   File::Spec: '0'
@@ -77,7 +77,7 @@ requires:
   utf8: '0'
   warnings: '0'
 resources:
-  bugtracker: https://github.com/kentfredric/CPAN-Changes-Markdown/issues
-  homepage: https://github.com/kentfredric/CPAN-Changes-Markdown
-  repository: https://github.com/kentfredric/CPAN-Changes-Markdown.git
+  bugtracker: https://github.com/kentnl/CPAN-Changes-Markdown/issues
+  homepage: https://github.com/kentnl/CPAN-Changes-Markdown
+  repository: https://github.com/kentnl/CPAN-Changes-Markdown.git
 version: '1.000001'

@@ -258,7 +258,7 @@ A CPAN::Changes::Markdown::Filter object that can process a line.
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
