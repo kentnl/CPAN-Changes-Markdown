@@ -1,6 +1,6 @@
 Release history for CPAN-Changes-Markdown
 
-1.000002 2017-03-07T13:36:15Z d52285d
+1.000002 2017-03-07T13:43:19Z 4e768cd
  - Bugfix: Avoid test failures with -Ddefault_inc_excludes_dot
 
  [Dependencies::Stats]
