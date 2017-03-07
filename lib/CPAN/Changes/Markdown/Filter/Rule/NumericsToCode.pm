@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
 
 # ABSTRACT: Quote things that look like numbers as code entries.
 
-our $VERSION = '1.000002';
+our $VERSION = '1.000003';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -79,7 +79,7 @@ CPAN::Changes::Markdown::Filter::Rule::NumericsToCode - Quote things that look l
 
 =head1 VERSION
 
-version 1.000002
+version 1.000003
 
 =head1 SYNOPSIS
 

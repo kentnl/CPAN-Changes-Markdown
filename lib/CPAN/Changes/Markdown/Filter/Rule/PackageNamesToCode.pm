@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode;
 
 # ABSTRACT: Quote things that look like Perl Package names to Code
 
-our $VERSION = '1.000002';
+our $VERSION = '1.000003';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -106,7 +106,7 @@ CPAN::Changes::Markdown::Filter::Rule::PackageNamesToCode - Quote things that lo
 
 =head1 VERSION
 
-version 1.000002
+version 1.000003
 
 =head1 SYNOPSIS
 

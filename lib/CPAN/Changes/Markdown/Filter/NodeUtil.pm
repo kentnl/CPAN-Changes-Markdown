@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Filter::NodeUtil;
 
 # ABSTRACT: short-hand node construction functions
 
-our $VERSION = '1.000002';
+our $VERSION = '1.000003';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -65,7 +65,7 @@ CPAN::Changes::Markdown::Filter::NodeUtil - short-hand node construction functio
 
 =head1 VERSION
 
-version 1.000002
+version 1.000003
 
 =head1 SYNOPSIS
 
