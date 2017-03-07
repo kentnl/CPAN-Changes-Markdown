@@ -6,7 +6,7 @@ package CPAN::Changes::Markdown::Filter::Rule::NumericsToCode;
 
 # ABSTRACT: Quote things that look like numbers as code entries.
 
-our $VERSION = '1.000001';
+our $VERSION = '1.000002';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -79,7 +79,7 @@ CPAN::Changes::Markdown::Filter::Rule::NumericsToCode - Quote things that look l
 
 =head1 VERSION
 
-version 1.000001
+version 1.000002
 
 =head1 SYNOPSIS
 
@@ -109,7 +109,7 @@ Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
